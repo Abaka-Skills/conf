@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIGGRAPH 2026 — All Events Summary · Jul 19–23 · Los Angeles</title>
+<link rel="stylesheet" href="assets/summary.css">
+</head>
+<body>
+<header>
+  <h1>SIGGRAPH 2026 · All Events <span class="sub">Los Angeles Convention Center · 19–23 July 2026 · times in PDT</span></h1>
+  <div class="stats" id="stats"></div>
+  <div class="controls">
+    <div class="grp"><span class="lbl">Day</span><span id="daybtns"></span></div>
+    <div class="sep"></div>
+    <div class="grp"><span class="lbl">View</span>
+      <button id="vtl" class="on">Timeline</button><button id="vlist">List</button></div>
+    <div class="sep"></div>
+    <div class="grp"><span class="lbl">Favorites</span>
+      <button id="favmode" class="fav">✎ Edit favorites</button>
+      <button id="favonly" class="fav">★ Favorites (0)</button></div>
+    <div class="sep"></div>
+    <div class="grp"><span class="lbl">Program</span>
+      <button id="clearty" class="on">All programs</button><span class="sub" id="tysel"></span></div>
+  </div>
+</header>
+<div id="searchbox">
+  <input id="q" type="search" placeholder="search title, people, tags, room…">
+  <span id="qcount"></span>
+  <button id="qprev" title="previous match (Shift+Enter)">‹</button>
+  <button id="qnext" title="next match (Enter)">›</button>
+</div>
+<div class="wrap">
+  <h2 id="mxhdr" class="fold"><span class="caret">▾</span> Program × Day overview <span class="sub">(checkbox shows/hides that program's events · click title to fold)</span></h2>
+  <div class="matrix" id="mxbox"><table class="mx" id="mx"></table></div>
+  <h2 id="agendahdr">Agenda</h2>
+  <div id="agenda"></div>
+</div>
+<div id="tip"></div>
+<footer>Session-level summary scraped from the official schedule · <a href="https://s2026.conference-schedule.org/" target="_blank" rel="noopener">↗ s2026.conference-schedule.org</a> · each row links to its official session page.
+Favorites are saved in your browser (localStorage) — per browser and per site.</footer>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body></html>
