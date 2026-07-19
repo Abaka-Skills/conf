@@ -1,5 +1,5 @@
 // SIGGRAPH 2026 — all 487 session-level events, scraped from s2026.conference-schedule.org
-// Canonical data file (times in UTC; the app converts to PDT). Regenerate by re-scraping.
+// Canonical data file (times in UTC; the app converts to PDT). Regenerate with tools/pull_official.mjs.
 const EVENTS = [
  {
   "day": "2026-07-19",
@@ -14,8 +14,8 @@ const EVENTS = [
   "speakers": [],
   "tags": [
    "Arts & Design",
-   "New Technologies",
    "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
    "Research & Education"
   ]
@@ -38,15 +38,15 @@ const EVENTS = [
    "Mikki Rose"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
+   "Production & Animation",
+   "Research & Education",
    "Ethics and Society",
    "Full Conference Supporter",
-   "Production & Animation"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -66,13 +66,13 @@ const EVENTS = [
    "Anyi Rao"
   ],
   "tags": [
-   "Generative AI",
-   "Art",
-   "Full Conference",
    "Arts & Design",
    "Production & Animation",
+   "Art",
    "Computer Vision",
-   "Full Conference Supporter"
+   "Generative AI",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -93,14 +93,14 @@ const EVENTS = [
   ],
   "tags": [
    "Gaming & Interactive",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
-   "Rendering",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Games",
    "Math Foundations and Theory",
-   "Artificial Intelligence/Machine Learning"
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -126,14 +126,14 @@ const EVENTS = [
    "Lingqi Yan"
   ],
   "tags": [
+   "New Technologies",
+   "Research & Education",
    "Generative AI",
    "Geometry",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
-   "Full Conference Supporter",
+   "Modeling",
    "Rendering",
-   "Modeling"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -157,16 +157,16 @@ const EVENTS = [
    "Scott Greenwood"
   ],
   "tags": [
-   "Simulation",
-   "Full Conference",
    "New Technologies",
-   "Physical AI",
-   "Virtual Reality",
-   "Scientific Visualization",
-   "Experience",
-   "Full Conference Supporter",
    "Digital Twins",
-   "Robotics"
+   "Physical AI",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -184,12 +184,12 @@ const EVENTS = [
    "Cyprien Plateau--Holleville"
   ],
   "tags": [
-   "Simulation",
    "Research & Education",
    "Geometry",
-   "Full Conference",
    "Math Foundations and Theory",
-   "Full Conference Supporter"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -204,8 +204,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -221,8 +221,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -238,8 +238,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -255,8 +255,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -272,8 +272,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -289,8 +289,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -306,8 +306,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -323,8 +323,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -337,23 +337,23 @@ const EVENTS = [
   "ssid": "none",
   "title": "Rendering and Materials",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess178",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Gaming & Interactive",
-   "Art",
-   "Research & Education",
-   "Games",
-   "Full Conference",
    "Arts & Design",
-   "Digital Twins",
+   "Gaming & Interactive",
    "Production & Animation",
-   "Full Conference Supporter",
-   "Education",
+   "Research & Education",
+   "Art",
    "Computer Vision",
+   "Digital Twins",
+   "Education",
+   "Games",
+   "Image Processing",
+   "Pipeline Tools and Work",
    "Rendering",
-   "Image Processing"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -368,29 +368,29 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Gaming & Interactive",
-   "Geometry",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Digital Twins",
-   "Industry Insight",
-   "Education",
-   "Rendering",
-   "Computer Vision",
+   "Production & Animation",
+   "Research & Education",
    "Art",
-   "Real-Time",
-   "Performance",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Computer Vision",
+   "Digital Twins",
+   "Education",
    "Fabrication",
    "Games",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
+   "Generative AI",
+   "Geometry",
+   "Industry Insight",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -405,12 +405,12 @@ const EVENTS = [
   "room": "Petree D",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Animation",
+   "Pipeline Tools and Work",
    "Real-Time",
-   "Animation"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -430,15 +430,15 @@ const EVENTS = [
    "Richard Lewis"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Art",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "Production & Animation",
+   "Research & Education",
+   "Art",
    "Education",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -457,10 +457,10 @@ const EVENTS = [
    "Ewa Trusz"
   ],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
+   "Games",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -481,15 +481,15 @@ const EVENTS = [
    "Richard Lewis"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Art",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "Production & Animation",
+   "Research & Education",
+   "Art",
    "Education",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -506,14 +506,14 @@ const EVENTS = [
    "Tara DeMarco"
   ],
   "tags": [
-   "Animation",
-   "Visual Effects",
-   "Experience",
-   "Full Conference",
-   "Ethics and Society",
-   "Full Conference Supporter",
    "Production & Animation",
-   "Diversity, Equity and Inclusion"
+   "Animation",
+   "Diversity, Equity and Inclusion",
+   "Ethics and Society",
+   "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -535,15 +535,15 @@ const EVENTS = [
    "Callum Macmillan"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Full Conference",
-   "Industry Insight",
-   "Full Conference Supporter",
-   "Lighting",
-   "Real-Time",
    "Production & Animation",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
-   "Artificial Intelligence/Machine Learning"
+   "Industry Insight",
+   "Lighting",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -555,17 +555,17 @@ const EVENTS = [
   "ssid": "gensub_433",
   "title": "Curves for Technical Artists",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=15&id=gensub_433&sess=sess186",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [
    "Thomas Stevenson"
   ],
   "tags": [
-   "Animation",
-   "Research & Education",
-   "Full Conference",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Math Foundations and Theory",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -585,11 +585,11 @@ const EVENTS = [
   ],
   "tags": [
    "Gaming & Interactive",
-   "Experience",
-   "Games",
-   "Full Conference",
    "Audio",
-   "Full Conference Supporter"
+   "Games",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -604,13 +604,13 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
-   "Full Conference Supporter",
+   "Games",
    "Rendering",
-   "Discover",
-   "Experience"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -632,14 +632,14 @@ const EVENTS = [
    "Laurie Kim"
   ],
   "tags": [
-   "Animation",
-   "Simulation",
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
-   "Rendering",
+   "Animation",
+   "Lighting",
    "Modeling",
-   "Lighting"
+   "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -658,17 +658,17 @@ const EVENTS = [
    "Rickard Antroia"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Simulation",
-   "Full Conference",
    "Arts & Design",
-   "Rendering",
+   "Gaming & Interactive",
    "Art",
-   "Real-Time",
-   "Performance",
-   "Experience",
    "Games",
-   "Full Conference Supporter"
+   "Performance",
+   "Real-Time",
+   "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -678,27 +678,27 @@ const EVENTS = [
   "type": "Birds of a Feather",
   "psid": "sess423",
   "ssid": "bof_170",
-  "title": "AI-Driven Data Pipelines for Digital Twins and Simulation",
+  "title": "CANCELED: AI-Driven Data Pipelines for Digital Twins and Simulation",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=15&id=bof_170&sess=sess423",
   "room": "Room 513",
   "speakers": [
    "Viv Devadas"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Physical AI",
-   "Generative AI",
-   "Simulation",
-   "Real-Time",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
-   "Industry Insight",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Digital Twins",
-   "Artificial Intelligence/Machine Learning"
+   "Generative AI",
+   "Industry Insight",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -724,22 +724,22 @@ const EVENTS = [
    "Rebecca Xu"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Animation",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Virtual Reality",
-   "Art",
-   "Real-Time",
-   "Performance",
-   "Experience",
-   "Games",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Augmented Reality",
+   "Education",
+   "Games",
+   "Performance",
+   "Real-Time",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -754,10 +754,10 @@ const EVENTS = [
   "room": "411 Theatre",
   "speakers": [],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
+   "Games",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -773,8 +773,8 @@ const EVENTS = [
   "room": "Petree D Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -791,11 +791,11 @@ const EVENTS = [
    "Marc Salvati"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -815,11 +815,11 @@ const EVENTS = [
   ],
   "tags": [
    "Gaming & Interactive",
-   "Experience",
-   "Games",
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Games",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -831,23 +831,23 @@ const EVENTS = [
   "ssid": "none",
   "title": "Between the Frames",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess172",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Generative AI",
-   "Animation",
-   "Simulation",
    "Gaming & Interactive",
-   "Artificial Intelligence/Machine Learning",
-   "Research & Education",
-   "Games",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
-   "Education",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
-   "Image Processing"
+   "Education",
+   "Games",
+   "Generative AI",
+   "Image Processing",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -862,28 +862,28 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Generative AI",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
-   "Rendering",
-   "Computer Vision",
-   "Physical AI",
-   "Art",
-   "Virtual Reality",
-   "Scientific Visualization",
-   "Real-Time",
-   "Performance",
-   "Games",
-   "Capture/Scanning",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Art",
    "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Capture/Scanning",
+   "Computer Vision",
+   "Games",
+   "Generative AI",
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -908,22 +908,22 @@ const EVENTS = [
    "Kevin Seals"
   ],
   "tags": [
-   "Spatial Computing",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
    "New Technologies",
-   "Industry Insight",
-   "Full Conference Supporter",
-   "Virtual Reality",
-   "Real-Time",
-   "Scientific Visualization",
-   "Experience",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Augmented Reality",
    "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Industry Insight",
+   "Real-Time",
+   "Robotics",
+   "Scientific Visualization",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -938,8 +938,8 @@ const EVENTS = [
   "room": "Petree D",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -965,19 +965,19 @@ const EVENTS = [
    "Scott McCloud"
   ],
   "tags": [
-   "Image Processing",
-   "Generative AI",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
-   "Industry Insight",
-   "Education",
-   "Rendering",
-   "Full Conference Supporter",
+   "Research & Education",
    "Art",
-   "Scientific Visualization",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
-   "Artificial Intelligence/Machine Learning"
+   "Education",
+   "Generative AI",
+   "Image Processing",
+   "Industry Insight",
+   "Rendering",
+   "Scientific Visualization",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -992,13 +992,13 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
-   "Full Conference Supporter",
+   "Games",
    "Rendering",
-   "Discover",
-   "Experience"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -1018,19 +1018,19 @@ const EVENTS = [
    "Zoe Ryan"
   ],
   "tags": [
-   "Generative AI",
-   "Simulation",
-   "Geometry",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
-   "Rendering",
-   "Physical AI",
-   "Scientific Visualization",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Capture/Scanning",
-   "Full Conference Supporter",
    "Digital Twins",
-   "Artificial Intelligence/Machine Learning"
+   "Generative AI",
+   "Geometry",
+   "Physical AI",
+   "Rendering",
+   "Scientific Visualization",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -1045,16 +1045,16 @@ const EVENTS = [
   "room": "Room 515 A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Art",
-   "Animation",
-   "Full Conference",
    "Arts & Design",
    "Production & Animation",
+   "Animation",
+   "Art",
    "Industry Insight",
-   "Full Conference Supporter",
+   "Lighting",
+   "Pipeline Tools and Work",
    "Rendering",
-   "Lighting"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -1074,13 +1074,13 @@ const EVENTS = [
    "Philip Luhn"
   ],
   "tags": [
-   "Pipeline Tools and Work",
    "Research & Education",
-   "Experience",
-   "Full Conference",
-   "Industry Insight",
    "Education",
-   "Full Conference Supporter"
+   "Industry Insight",
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1099,10 +1099,10 @@ const EVENTS = [
    "John Canning"
   ],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
+   "Games",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -1118,13 +1118,13 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
-   "Full Conference Supporter",
+   "Games",
    "Rendering",
-   "Discover",
-   "Experience"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -1143,15 +1143,15 @@ const EVENTS = [
   ],
   "tags": [
    "Gaming & Interactive",
-   "Generative AI",
-   "Artificial Intelligence/Machine Learning",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "New Technologies",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
+   "Generative AI",
+   "Real-Time",
    "Rendering",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1173,21 +1173,21 @@ const EVENTS = [
    "June Kim"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Animation",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Virtual Reality",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Scientific Visualization",
-   "Experience",
+   "Education",
    "Games",
    "Hardware",
+   "Scientific Visualization",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Production & Animation"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1204,17 +1204,17 @@ const EVENTS = [
    "Andrew Glassner"
   ],
   "tags": [
-   "Image Processing",
-   "Generative AI",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
-   "Full Conference Supporter",
    "Games",
+   "Generative AI",
+   "Image Processing",
    "Math Foundations and Theory",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -1226,31 +1226,31 @@ const EVENTS = [
   "ssid": "none",
   "title": "Don't Do it in Post",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess183",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Animation",
-   "Geometry",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
-   "New Technologies",
    "Arts & Design",
-   "Artificial Intelligence/Machine Learning",
-   "Rendering",
-   "Computer Vision",
-   "Virtual Reality",
-   "Performance",
-   "Games",
-   "Hardware",
-   "Capture/Scanning",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Computer Vision",
    "Digital Twins",
-   "Image Processing"
+   "Games",
+   "Geometry",
+   "Hardware",
+   "Image Processing",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Rendering",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -1273,14 +1273,14 @@ const EVENTS = [
    "Xiaopei Liu"
   ],
   "tags": [
-   "Simulation",
-   "Research & Education",
-   "Games",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
+   "Research & Education",
+   "Dynamics",
+   "Games",
+   "Simulation",
    "Full Conference Supporter",
-   "Dynamics"
+   "Full Conference"
   ]
  },
  {
@@ -1298,19 +1298,19 @@ const EVENTS = [
    "Edith Llontop"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter",
-   "Physical AI",
-   "Real-Time",
-   "Hardware",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
    "Digital Twins",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Hardware",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -1329,10 +1329,10 @@ const EVENTS = [
    "Ezra Goss"
   ],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
+   "Games",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -1348,13 +1348,13 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
-   "Full Conference Supporter",
+   "Games",
    "Rendering",
-   "Discover",
-   "Experience"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -1376,22 +1376,22 @@ const EVENTS = [
    "Wyatt Bartel"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Image Processing",
-   "Display",
-   "Generative AI",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
-   "Industry Insight",
-   "Education",
-   "Rendering",
-   "Art",
-   "Performance",
+   "New Technologies",
    "Production & Animation",
+   "Research & Education",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Display",
+   "Education",
+   "Generative AI",
+   "Image Processing",
+   "Industry Insight",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Rendering",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -1409,15 +1409,15 @@ const EVENTS = [
    "Diana Arellano"
   ],
   "tags": [
-   "Networking",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Networking",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1440,12 +1440,12 @@ const EVENTS = [
    "Kenny Mitchell"
   ],
   "tags": [
-   "Full Conference",
    "New Technologies",
-   "Generative AI",
    "Art",
-   "Full Conference Supporter",
    "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -1464,16 +1464,16 @@ const EVENTS = [
    "Ashley Neall"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Virtual Reality",
-   "Haptics",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
-   "Augmented Reality",
    "New Technologies",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Augmented Reality",
+   "Haptics",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1488,15 +1488,15 @@ const EVENTS = [
   "room": "Petree D Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
   "day": "2026-07-19",
   "s_utc": "2026-07-20T00:30:00Z",
   "e_utc": "2026-07-20T04:00:00Z",
-  "type": "Art Gallery",
+  "type": "ACM SIGGRAPH 365",
   "psid": "sess307",
   "ssid": "thea_124",
   "title": "SIGGRAPH Art Party - Joint Event by DAC, Art Paper & Art Gallery",
@@ -1509,21 +1509,21 @@ const EVENTS = [
    "Lex Dreitser"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Art",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
+   "Research & Education",
+   "Art",
    "Education",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
   "day": "2026-07-19",
   "s_utc": "2026-07-20T01:00:00Z",
   "e_utc": "2026-07-20T03:45:00Z",
-  "type": "Technical Papers",
+  "type": "Art Papers",
   "psid": "sess237",
   "ssid": "none",
   "title": "Papers Fast Forward",
@@ -1531,46 +1531,46 @@ const EVENTS = [
   "room": "Hall K",
   "speakers": [],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Physical AI",
-   "Art",
-   "Real-Time",
-   "Hardware",
-   "Computer Vision",
-   "Math Foundations and Theory",
-   "Digital Twins",
-   "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Simulation",
+   "Production & Animation",
    "Research & Education",
-   "Geometry",
+   "Animation",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
    "Augmented Reality",
+   "Capture/Scanning",
+   "Computer Vision",
+   "Digital Twins",
+   "Display",
+   "Dynamics",
+   "Education",
    "Ethics and Society",
-   "Rendering",
-   "Lighting",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
+   "Generative AI",
+   "Geometry",
+   "Haptics",
+   "Hardware",
+   "Image Processing",
+   "Lighting",
+   "Math Foundations and Theory",
    "Modeling",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1588,54 +1588,54 @@ const EVENTS = [
    "Yu-Lun Liu"
   ],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Networking",
-   "Gaming & Interactive",
-   "Full Conference",
-   "Chapters",
-   "New Technologies",
    "Arts & Design",
-   "Pioneers",
-   "Education",
-   "Diversity, Equity and Inclusion",
-   "Physical AI",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Real-Time",
-   "Visual Effects",
-   "Hardware",
-   "Math Foundations and Theory",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Chapters",
    "Computer Vision",
    "Digital Twins",
+   "Display",
+   "Diversity, Equity and Inclusion",
    "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Research & Education",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "History",
-   "Industry Insight",
-   "Rendering",
+   "Education",
    "Ethics and Society",
-   "Lighting",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
-   "Games",
    "Fabrication",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
+   "Games",
+   "Generative AI",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Haptics",
+   "Hardware",
+   "History",
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
    "Modeling",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Networking",
+   "Performance",
+   "Physical AI",
+   "Pioneers",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1652,14 +1652,14 @@ const EVENTS = [
    "Mark Marino"
   ],
   "tags": [
-   "Art",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
-   "Ethics and Society",
+   "Research & Education",
+   "Art",
    "Education",
-   "Full Conference Supporter"
+   "Ethics and Society",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1679,20 +1679,20 @@ const EVENTS = [
    "Mohammad Mohajerani"
   ],
   "tags": [
-   "Spatial Computing",
-   "Display",
-   "Physical AI",
-   "Scientific Visualization",
-   "Research & Education",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
-   "Augmented Reality",
    "Arts & Design",
    "New Technologies",
+   "Research & Education",
+   "Augmented Reality",
+   "Digital Twins",
+   "Display",
    "Graphics Systems Architecture",
+   "Physical AI",
+   "Real-Time",
+   "Scientific Visualization",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Digital Twins"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1708,8 +1708,8 @@ const EVENTS = [
   "speakers": [],
   "tags": [
    "Arts & Design",
-   "New Technologies",
    "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
    "Research & Education"
   ]
@@ -1728,17 +1728,17 @@ const EVENTS = [
    "Mike Bailey"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Animation",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
+   "Research & Education",
+   "Animation",
    "Education",
-   "Rendering",
    "Lighting",
-   "Experience",
+   "Modeling",
+   "Rendering",
    "Full Conference Supporter",
-   "Modeling"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1753,26 +1753,26 @@ const EVENTS = [
   "room": "Room 308",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
    "Gaming & Interactive",
-   "Generative AI",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
-   "Graphics Systems Architecture",
-   "Industry Insight",
-   "Artificial Intelligence/Machine Learning",
-   "Rendering",
-   "Lighting",
-   "Discover",
-   "Real-Time",
-   "Performance",
-   "Experience",
-   "Games",
-   "Hardware",
-   "Computer Vision",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Computer Vision",
+   "Games",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Hardware",
+   "Industry Insight",
+   "Lighting",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -1795,12 +1795,12 @@ const EVENTS = [
    "Makai Smith"
   ],
   "tags": [
-   "Generative AI",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
    "Ethics and Society",
-   "Full Conference Supporter"
+   "Generative AI",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1812,16 +1812,16 @@ const EVENTS = [
   "ssid": "none",
   "title": "Digital Humans & Virtual Try-On",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess152",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Generative AI",
-   "Animation",
-   "Full Conference Supporter",
-   "Modeling",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Modeling",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -1844,11 +1844,11 @@ const EVENTS = [
    "Jennifer Wei"
   ],
   "tags": [
-   "Full Conference",
-   "Experience",
-   "Full Conference Supporter",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -1874,27 +1874,27 @@ const EVENTS = [
    "Karsten Kreis"
   ],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Dynamics",
-   "Geometry",
-   "Research & Education",
-   "Modeling",
-   "Full Conference",
    "New Technologies",
-   "Education",
-   "Rendering",
-   "Full Conference Supporter",
-   "Physical AI",
-   "Scientific Visualization",
-   "Fabrication",
-   "Math Foundations and Theory",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
    "Digital Twins",
-   "Artificial Intelligence/Machine Learning"
+   "Dynamics",
+   "Education",
+   "Fabrication",
+   "Generative AI",
+   "Geometry",
+   "Image Processing",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Physical AI",
+   "Rendering",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -1909,13 +1909,13 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Geometry",
-   "Full Conference",
+   "Modeling",
    "Simulation",
    "Full Conference Supporter",
-   "Modeling",
-   "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -1930,13 +1930,13 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
-   "Full Conference Supporter",
+   "Games",
    "Rendering",
-   "Discover",
-   "Experience"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -1951,8 +1951,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -1968,8 +1968,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -1985,8 +1985,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2002,8 +2002,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2019,8 +2019,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2036,8 +2036,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2053,8 +2053,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2070,8 +2070,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2089,14 +2089,14 @@ const EVENTS = [
    "Lanny Smoot"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
    "Production & Animation",
+   "Research & Education",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -2115,11 +2115,11 @@ const EVENTS = [
    "Rob Jensen"
   ],
   "tags": [
-   "Full Conference",
-   "Animation",
-   "Full Conference Supporter",
    "Production & Animation",
+   "Animation",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2135,12 +2135,12 @@ const EVENTS = [
   "room": "Room 411",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "New Technologies",
-   "Art",
-   "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning",
    "Research & Education",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2163,12 +2163,12 @@ const EVENTS = [
    "Jennifer Jacobs"
   ],
   "tags": [
-   "Full Conference",
    "Arts & Design",
-   "Ethics and Society",
-   "Full Conference Supporter",
    "Production & Animation",
    "Research & Education",
+   "Ethics and Society",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2186,23 +2186,23 @@ const EVENTS = [
    "Tyler Varacchi"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
-   "Ethics and Society",
-   "Industry Insight",
-   "Artificial Intelligence/Machine Learning",
-   "Visual Effects",
-   "Experience",
-   "Games",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
-   "Full Conference Supporter"
+   "Ethics and Society",
+   "Games",
+   "Generative AI",
+   "Industry Insight",
+   "Pipeline Tools and Work",
+   "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2217,13 +2217,13 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
-   "Full Conference Supporter",
+   "Games",
    "Rendering",
-   "Discover",
-   "Experience"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -2240,10 +2240,10 @@ const EVENTS = [
    "Kimball Thurston"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2261,10 +2261,10 @@ const EVENTS = [
    "Ken Museth"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2283,14 +2283,14 @@ const EVENTS = [
    "Katie Herrera"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
    "Full Conference Supporter",
-   "Rendering"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2307,19 +2307,19 @@ const EVENTS = [
    "Jon Bach"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
    "Gaming & Interactive",
-   "Artificial Intelligence/Machine Learning",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Graphics Systems Architecture",
-   "Full Conference Supporter",
-   "Rendering",
    "Production & Animation",
-   "Image Processing"
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Image Processing",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2334,22 +2334,22 @@ const EVENTS = [
   "room": "Room 411",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
    "Gaming & Interactive",
-   "Animation",
-   "Simulation",
-   "Full Conference",
-   "Digital Twins",
-   "Industry Insight",
-   "Education",
-   "Rendering",
-   "Real-Time",
-   "Experience",
-   "Performance",
-   "Games",
    "Production & Animation",
+   "Animation",
+   "Digital Twins",
+   "Education",
+   "Games",
+   "Industry Insight",
+   "Modeling",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Simulation",
    "Full Conference Supporter",
-   "Modeling"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2364,14 +2364,14 @@ const EVENTS = [
   "room": "Concourse Foyer",
   "speakers": [],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2386,38 +2386,38 @@ const EVENTS = [
   "room": "Concourse Hall",
   "speakers": [],
   "tags": [
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Physical AI",
+   "Research & Education",
    "Art",
-   "Real-Time",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
+   "Display",
    "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Research & Education",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
+   "Education",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Full Conference Supporter",
    "Image Processing",
-   "Robotics"
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Robotics",
+   "Scientific Visualization",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2432,35 +2432,35 @@ const EVENTS = [
   "room": "Concourse Hall",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
-   "New Technologies",
    "Arts & Design",
-   "Ethics and Society",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Computer Vision",
-   "Virtual Reality",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Haptics",
-   "Scientific Visualization",
-   "Real-Time",
-   "Experience",
-   "Performance",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Computer Vision",
+   "Digital Twins",
+   "Education",
+   "Ethics and Society",
    "Fabrication",
    "Games",
-   "Audio",
+   "Generative AI",
+   "Haptics",
    "Hardware",
+   "Image Processing",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Digital Twins",
-   "Image Processing"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2486,11 +2486,11 @@ const EVENTS = [
    "Josh Vekhter"
   ],
   "tags": [
-   "Full Conference",
-   "Experience",
-   "Education",
    "Research & Education",
-   "Full Conference Supporter"
+   "Education",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2510,15 +2510,15 @@ const EVENTS = [
    "Jeff Kember"
   ],
   "tags": [
-   "Animation",
-   "Research & Education",
-   "Visual Effects",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Visual Effects",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2533,12 +2533,12 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Modeling",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Geometry",
+   "Modeling",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -2553,17 +2553,17 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Display",
-   "Virtual Reality",
-   "Simulation",
-   "Real-Time",
    "Research & Education",
-   "Fabrication",
-   "Full Conference",
    "Augmented Reality",
+   "Display",
+   "Fabrication",
    "Hardware",
+   "Real-Time",
+   "Rendering",
+   "Simulation",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Rendering"
+   "Full Conference"
   ]
  },
  {
@@ -2575,15 +2575,15 @@ const EVENTS = [
   "ssid": "none",
   "title": "Learning for CAD",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess142",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Modeling",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Geometry",
+   "Modeling",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -2598,22 +2598,22 @@ const EVENTS = [
   "room": "Room 515 A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Simulation",
    "Gaming & Interactive",
-   "Geometry",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
-   "Real-Time",
-   "Performance",
-   "Games",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Animation",
+   "Dynamics",
+   "Games",
+   "Generative AI",
+   "Geometry",
    "Modeling",
-   "Dynamics"
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -2635,17 +2635,17 @@ const EVENTS = [
    "Doug Roble"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
-   "Industry Insight",
-   "Full Conference Supporter",
-   "Lighting",
-   "Capture/Scanning",
    "Production & Animation",
+   "Research & Education",
+   "Capture/Scanning",
    "Computer Vision",
-   "Image Processing"
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -2660,13 +2660,13 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
-   "Modeling",
    "Research & Education",
-   "Fabrication"
+   "Fabrication",
+   "Geometry",
+   "Modeling",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -2683,10 +2683,10 @@ const EVENTS = [
    "Tommy Burnette"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2704,10 +2704,10 @@ const EVENTS = [
    "Randy Packer"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2723,12 +2723,12 @@ const EVENTS = [
   "room": "Room 411",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Artificial Intelligence/Machine Learning",
+   "Education",
    "Industry Insight",
    "Full Conference Supporter",
-   "Education",
-   "Research & Education",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2747,11 +2747,11 @@ const EVENTS = [
    "Jarah Lachica"
   ],
   "tags": [
-   "Full Conference",
+   "Research & Education",
+   "Education",
    "Ethics and Society",
    "Full Conference Supporter",
-   "Education",
-   "Research & Education",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2773,15 +2773,15 @@ const EVENTS = [
    "Adriana Schulz"
   ],
   "tags": [
-   "Simulation",
    "Research & Education",
-   "Experience",
    "Fabrication",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
    "Modeling",
-   "Robotics"
+   "Rendering",
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2801,17 +2801,17 @@ const EVENTS = [
    "Taehyun Rhee"
   ],
   "tags": [
-   "Spatial Computing",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
-   "Rendering",
-   "Virtual Reality",
-   "Experience",
-   "Capture/Scanning",
    "Production & Animation",
+   "Research & Education",
+   "Capture/Scanning",
+   "Image Processing",
+   "Rendering",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Image Processing"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2826,13 +2826,13 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Games",
-   "Full Conference",
    "Gaming & Interactive",
-   "Full Conference Supporter",
+   "Games",
    "Rendering",
-   "Discover",
-   "Experience"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -2858,13 +2858,13 @@ const EVENTS = [
    "Joyce Pei"
   ],
   "tags": [
-   "Art",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Research & Education",
+   "Art",
    "Education",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -2881,12 +2881,40 @@ const EVENTS = [
    "Carol Payne"
   ],
   "tags": [
-   "Full Conference",
-   "Diversity, Equity and Inclusion",
-   "Animation",
-   "Full Conference Supporter",
    "Production & Animation",
+   "Animation",
+   "Diversity, Equity and Inclusion",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
+  ]
+ },
+ {
+  "day": "2026-07-20",
+  "s_utc": "2026-07-20T19:00:00Z",
+  "e_utc": "2026-07-20T20:00:00Z",
+  "type": "Birds of a Feather",
+  "psid": "sess499",
+  "ssid": "bof_213",
+  "title": "CANCELED: The Geometry Gap: Ground-Truth 4D Data for World Models and Physical AI",
+  "url": "https://s2026.conference-schedule.org/?post_type=page&p=15&id=bof_213&sess=sess499",
+  "room": "Room 513",
+  "speakers": [
+   "Tyler Raciti"
+  ],
+  "tags": [
+   "New Technologies",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Computer Vision",
+   "Digital Twins",
+   "Geometry",
+   "Physical AI",
+   "Robotics",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2904,9 +2932,9 @@ const EVENTS = [
    "Jimmz Zhang"
   ],
   "tags": [
-   "Full Conference",
    "Spatial Computing",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2924,10 +2952,10 @@ const EVENTS = [
    "Erik Strauss"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -2943,37 +2971,9 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
-  ]
- },
- {
-  "day": "2026-07-20",
-  "s_utc": "2026-07-20T19:00:00Z",
-  "e_utc": "2026-07-20T20:00:00Z",
-  "type": "Birds of a Feather",
-  "psid": "sess499",
-  "ssid": "bof_213",
-  "title": "The Geometry Gap: Ground-Truth 4D Data for World Models and Physical AI",
-  "url": "https://s2026.conference-schedule.org/?post_type=page&p=15&id=bof_213&sess=sess499",
-  "room": "Room 513",
-  "speakers": [
-   "Tyler Raciti"
-  ],
-  "tags": [
-   "Physical AI",
-   "Virtual Reality",
-   "Geometry",
-   "Experience",
-   "Full Conference",
-   "Augmented Reality",
-   "New Technologies",
-   "Capture/Scanning",
-   "Computer Vision",
-   "Full Conference Supporter",
-   "Digital Twins",
-   "Robotics"
   ]
  },
  {
@@ -2990,53 +2990,53 @@ const EVENTS = [
    "Rosario Vila"
   ],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Networking",
-   "Gaming & Interactive",
-   "Full Conference",
-   "Chapters",
-   "New Technologies",
    "Arts & Design",
-   "Pioneers",
-   "Education",
-   "Diversity, Equity and Inclusion",
-   "Physical AI",
-   "Art",
-   "Real-Time",
-   "Computer Vision",
-   "Math Foundations and Theory",
-   "Digital Twins",
-   "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Research & Education",
-   "Geometry",
-   "Modeling",
-   "Augmented Reality",
-   "Ethics and Society",
-   "Industry Insight",
-   "Graphics Systems Architecture",
-   "Rendering",
-   "History",
-   "Lighting",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
-   "Games",
-   "Fabrication",
-   "Capture/Scanning",
-   "Audio",
-   "Hardware",
-   "Full Conference Supporter",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Art",
    "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Chapters",
+   "Computer Vision",
+   "Digital Twins",
+   "Display",
+   "Diversity, Equity and Inclusion",
+   "Dynamics",
+   "Education",
+   "Ethics and Society",
+   "Fabrication",
+   "Games",
+   "Generative AI",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Haptics",
+   "Hardware",
+   "History",
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Networking",
+   "Performance",
+   "Physical AI",
+   "Pioneers",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3053,10 +3053,10 @@ const EVENTS = [
    "David Shorey"
   ],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter",
-   "Education",
    "Research & Education",
+   "Education",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -3075,15 +3075,15 @@ const EVENTS = [
    "AJ Chavar"
   ],
   "tags": [
-   "Spatial Computing",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
-   "Capture/Scanning",
    "New Technologies",
+   "Research & Education",
+   "Capture/Scanning",
+   "Digital Twins",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Digital Twins"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3109,17 +3109,17 @@ const EVENTS = [
    "Mark Chavez"
   ],
   "tags": [
-   "Generative AI",
-   "Animation",
-   "Full Conference",
    "Arts & Design",
-   "Art",
-   "Virtual Reality",
-   "Performance",
-   "Experience",
    "Production & Animation",
+   "Animation",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Performance",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3135,14 +3135,14 @@ const EVENTS = [
   "speakers": [],
   "tags": [
    "Gaming & Interactive",
-   "Animation",
-   "Real-Time",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Education",
+   "Real-Time",
    "Full Conference Supporter",
-   "Education"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3166,31 +3166,31 @@ const EVENTS = [
    "Denny Rönngren"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Generative AI",
-   "Simulation",
-   "Research & Education",
-   "Modeling",
-   "Full Conference",
-   "Augmented Reality",
    "New Technologies",
-   "Graphics Systems Architecture",
-   "Industry Insight",
-   "Education",
-   "Rendering",
+   "Research & Education",
    "Artificial Intelligence/Machine Learning",
-   "Virtual Reality",
-   "Real-Time",
-   "Visual Effects",
-   "Scientific Visualization",
-   "Performance",
-   "Experience",
-   "Games",
+   "Augmented Reality",
    "Computer Vision",
    "Digital Twins",
-   "Full Conference Supporter"
+   "Education",
+   "Games",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Industry Insight",
+   "Modeling",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3208,8 +3208,8 @@ const EVENTS = [
   ],
   "tags": [
    "Production & Animation",
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -3227,10 +3227,10 @@ const EVENTS = [
    "Jonathan Stone"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -3246,19 +3246,19 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Physical AI",
-   "Generative AI",
-   "Simulation",
-   "Real-Time",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Generative AI",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
-   "Discover",
-   "Robotics"
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -3275,18 +3275,18 @@ const EVENTS = [
    "Paige Bailey"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Generative AI",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Rendering",
-   "Experience",
    "Production & Animation",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Education",
+   "Generative AI",
+   "Rendering",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3301,23 +3301,23 @@ const EVENTS = [
   "room": "Room 411",
   "speakers": [],
   "tags": [
-   "Gaming & Interactive",
-   "Animation",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
-   "Education",
-   "Rendering",
-   "Lighting",
-   "Art",
-   "Real-Time",
-   "Experience",
-   "Games",
+   "Gaming & Interactive",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Dynamics",
+   "Education",
+   "Games",
+   "Lighting",
    "Modeling",
-   "Dynamics"
+   "Real-Time",
+   "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3332,14 +3332,14 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Real-Time",
    "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -3356,10 +3356,10 @@ const EVENTS = [
    "Scott Dyer"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -3377,14 +3377,14 @@ const EVENTS = [
    "Yağız Mungan"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Virtual Reality",
-   "Full Conference",
-   "Augmented Reality",
    "New Technologies",
+   "Augmented Reality",
    "Education",
-   "Full Conference Supporter"
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -3401,14 +3401,14 @@ const EVENTS = [
    "Julian Gomez"
   ],
   "tags": [
+   "New Technologies",
+   "Research & Education",
+   "Augmented Reality",
    "Spatial Computing",
    "Virtual Reality",
-   "Research & Education",
-   "Experience",
+   "Full Conference Supporter",
    "Full Conference",
-   "Augmented Reality",
-   "New Technologies",
-   "Full Conference Supporter"
+   "Experience"
   ]
  },
  {
@@ -3427,17 +3427,17 @@ const EVENTS = [
    "Sofia Pensado"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
-   "Capture/Scanning",
    "Arts & Design",
+   "New Technologies",
    "Production & Animation",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
    "Industry Insight",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3463,30 +3463,30 @@ const EVENTS = [
    "Yunuo Chen"
   ],
   "tags": [
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Research & Education",
-   "Modeling",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Industry Insight",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Full Conference Supporter",
-   "Physical AI",
-   "Fabrication",
-   "Games",
-   "Capture/Scanning",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
    "Dynamics",
-   "Robotics"
+   "Education",
+   "Fabrication",
+   "Games",
+   "Generative AI",
+   "Geometry",
+   "Industry Insight",
+   "Modeling",
+   "Physical AI",
+   "Robotics",
+   "Simulation",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -3501,15 +3501,15 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Generative AI",
-   "Animation",
-   "Simulation",
    "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
    "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -3532,17 +3532,17 @@ const EVENTS = [
   ],
   "tags": [
    "Gaming & Interactive",
-   "Generative AI",
-   "Full Conference",
    "New Technologies",
-   "Graphics Systems Architecture",
-   "Rendering",
-   "Physical AI",
-   "Performance",
-   "Experience",
+   "Artificial Intelligence/Machine Learning",
    "Games",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Performance",
+   "Physical AI",
+   "Rendering",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3559,15 +3559,15 @@ const EVENTS = [
    "Brad Grantham"
   ],
   "tags": [
-   "Pipeline Tools and Work",
    "Gaming & Interactive",
-   "Real-Time",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "New Technologies",
+   "Research & Education",
    "Graphics Systems Architecture",
-   "Full Conference Supporter"
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3585,16 +3585,16 @@ const EVENTS = [
    "Rory Mitchell"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Generative AI",
-   "Full Conference",
    "New Technologies",
-   "Virtual Reality",
-   "Experience",
    "Capture/Scanning",
+   "Digital Twins",
+   "Generative AI",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Digital Twins"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3606,16 +3606,16 @@ const EVENTS = [
   "ssid": "none",
   "title": "Speedy 3D",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess120",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
+   "Research & Education",
    "Geometry",
-   "Full Conference",
    "Hardware",
-   "Full Conference Supporter",
-   "Rendering",
    "Modeling",
-   "Research & Education"
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -3630,13 +3630,13 @@ const EVENTS = [
   "room": "Petree D",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Full Conference",
+   "Production & Animation",
    "Animation",
+   "Modeling",
+   "Pipeline Tools and Work",
    "Simulation",
    "Full Conference Supporter",
-   "Modeling",
-   "Production & Animation"
+   "Full Conference"
   ]
  },
  {
@@ -3651,12 +3651,12 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Generative AI",
-   "Full Conference Supporter",
-   "Rendering",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -3673,12 +3673,12 @@ const EVENTS = [
    "Sarah Counnas"
   ],
   "tags": [
-   "Full Conference",
-   "Diversity, Equity and Inclusion",
-   "Animation",
-   "Full Conference Supporter",
    "Production & Animation",
+   "Animation",
+   "Diversity, Equity and Inclusion",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -3698,43 +3698,43 @@ const EVENTS = [
    "Holger Theisel"
   ],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Full Conference",
-   "Education",
-   "Physical AI",
-   "Real-Time",
-   "Math Foundations and Theory",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
+   "Display",
    "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Research & Education",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Industry Insight",
+   "Education",
    "Ethics and Society",
-   "Rendering",
-   "Lighting",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Performance",
    "Fabrication",
    "Games",
-   "Experience",
-   "Capture/Scanning",
-   "Audio",
+   "Generative AI",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Full Conference Supporter",
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
    "Modeling",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3749,16 +3749,16 @@ const EVENTS = [
   "room": "Room 411",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Education",
-   "Artificial Intelligence/Machine Learning"
+   "Generative AI",
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3776,23 +3776,23 @@ const EVENTS = [
    "Moon Davé,"
   ],
   "tags": [
-   "Generative AI",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Geometry",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
-   "Education",
-   "Rendering",
-   "Artificial Intelligence/Machine Learning",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Research & Education",
    "Art",
-   "Real-Time",
-   "Performance",
-   "Experience",
+   "Artificial Intelligence/Machine Learning",
+   "Education",
    "Games",
+   "Generative AI",
+   "Geometry",
    "Math Foundations and Theory",
-   "Full Conference Supporter"
+   "Performance",
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3815,16 +3815,16 @@ const EVENTS = [
    "Nicholas Illingworth"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Animation",
-   "Performance",
-   "Full Conference",
    "Production & Animation",
+   "Animation",
    "Computer Vision",
-   "Rendering",
+   "Lighting",
    "Modeling",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Rendering",
    "Full Conference Supporter",
-   "Lighting"
+   "Full Conference"
   ]
  },
  {
@@ -3841,21 +3841,21 @@ const EVENTS = [
    "James Kane"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Generative AI",
-   "Gaming & Interactive",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Rendering",
-   "Lighting",
    "Art",
-   "Virtual Reality",
-   "Real-Time",
-   "Experience",
    "Games",
-   "Full Conference Supporter"
+   "Generative AI",
+   "Lighting",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3872,10 +3872,10 @@ const EVENTS = [
    "Paolo Selva"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -3893,17 +3893,18 @@ const EVENTS = [
    "Everardo Reyes",
    "Vernelle A. A. Noel",
    "Everardo Reyes",
-   "Vernelle A. A. Noel"
+   "Vernelle A. A. Noel",
+   "Rebecca Xu"
   ],
   "tags": [
-   "Generative AI",
-   "Art",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Research & Education",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3920,10 +3921,10 @@ const EVENTS = [
    "Emily Ruf"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -3941,16 +3942,16 @@ const EVENTS = [
    "Dean Johnson"
   ],
   "tags": [
-   "Spatial Computing",
-   "Generative AI",
-   "Virtual Reality",
-   "Experience",
-   "Full Conference",
-   "Augmented Reality",
    "New Technologies",
-   "Hardware",
+   "Augmented Reality",
    "Education",
-   "Full Conference Supporter"
+   "Generative AI",
+   "Hardware",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -3969,8 +3970,8 @@ const EVENTS = [
   ],
   "tags": [
    "Virtual Reality",
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -3988,49 +3989,49 @@ const EVENTS = [
    "Jeffrey Weekley"
   ],
   "tags": [
-   "Full Conference",
+   "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Diversity, Equity and Inclusion",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
-   "Research & Education",
-   "Augmented Reality",
+   "Display",
+   "Diversity, Equity and Inclusion",
+   "Dynamics",
+   "Education",
    "Ethics and Society",
-   "Graphics Systems Architecture",
-   "Industry Insight",
-   "Rendering",
-   "Haptics",
-   "Experience",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
-   "Modeling",
-   "Artificial Intelligence/Machine Learning",
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Arts & Design",
-   "Physical AI",
-   "Real-Time",
-   "Math Foundations and Theory",
-   "Dynamics",
-   "Pipeline Tools and Work",
    "Generative AI",
-   "Animation",
-   "Simulation",
    "Geometry",
-   "Lighting",
-   "Virtual Reality",
-   "Scientific Visualization",
-   "Performance",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Robotics"
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -4045,12 +4046,12 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Modeling",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Geometry",
+   "Modeling",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -4062,17 +4063,17 @@ const EVENTS = [
   "ssid": "none",
   "title": "Fabrication",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess118",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Simulation",
    "Research & Education",
-   "Geometry",
+   "Artificial Intelligence/Machine Learning",
    "Fabrication",
-   "Full Conference",
-   "Full Conference Supporter",
+   "Geometry",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -4087,16 +4088,16 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Generative AI",
-   "Virtual Reality",
-   "Simulation",
-   "Animation",
    "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
    "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -4111,13 +4112,13 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
+   "Research & Education",
    "Games",
-   "Full Conference",
+   "Real-Time",
+   "Rendering",
    "Virtual Reality",
    "Full Conference Supporter",
-   "Rendering",
-   "Real-Time",
-   "Research & Education"
+   "Full Conference"
   ]
  },
  {
@@ -4132,21 +4133,21 @@ const EVENTS = [
   "room": "Room 409 AB",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Virtual Reality",
-   "Art",
-   "Animation",
-   "Artificial Intelligence/Machine Learning",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Lighting",
+   "Pipeline Tools and Work",
    "Rendering",
-   "Lighting"
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -4165,14 +4166,14 @@ const EVENTS = [
    "Edward Liu"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
    "Production & Animation",
+   "Research & Education",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -4188,8 +4189,8 @@ const EVENTS = [
   "room": "Hall K Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -4206,27 +4207,27 @@ const EVENTS = [
    "Francesco Siddi"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Gaming & Interactive",
-   "Animation",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
-   "Ethics and Society",
-   "Education",
-   "Rendering",
-   "Art",
-   "Real-Time",
-   "Visual Effects",
-   "Scientific Visualization",
-   "Experience",
-   "Games",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Animation",
+   "Art",
    "Digital Twins",
-   "Image Processing"
+   "Education",
+   "Ethics and Society",
+   "Games",
+   "Image Processing",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Scientific Visualization",
+   "Simulation",
+   "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -4241,11 +4242,11 @@ const EVENTS = [
   "room": "Concourse Hall",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "New Technologies",
+   "Research & Education",
    "Virtual Reality",
    "Full Conference Supporter",
-   "Research & Education",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -4263,10 +4264,10 @@ const EVENTS = [
    "Carol Payne"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -4284,10 +4285,10 @@ const EVENTS = [
    "Paolo Selva"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -4307,10 +4308,10 @@ const EVENTS = [
    "Marie Henderson"
   ],
   "tags": [
-   "Full Conference",
    "Production & Animation",
+   "Scientific Visualization",
    "Full Conference Supporter",
-   "Scientific Visualization"
+   "Full Conference"
   ]
  },
  {
@@ -4331,14 +4332,14 @@ const EVENTS = [
    "Michael Haller"
   ],
   "tags": [
-   "Art",
+   "Arts & Design",
    "Research & Education",
-   "Experience",
+   "Art",
    "Fabrication",
    "Geometry",
+   "Full Conference Supporter",
    "Full Conference",
-   "Arts & Design",
-   "Full Conference Supporter"
+   "Experience"
   ]
  },
  {
@@ -4357,47 +4358,47 @@ const EVENTS = [
    "Natasha Warshawsky"
   ],
   "tags": [
-   "Full Conference",
+   "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
-   "Research & Education",
-   "Augmented Reality",
+   "Display",
+   "Dynamics",
+   "Education",
    "Ethics and Society",
-   "Industry Insight",
-   "Graphics Systems Architecture",
-   "Rendering",
-   "Haptics",
-   "Experience",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
-   "Modeling",
+   "Generative AI",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Haptics",
+   "Hardware",
    "Image Processing",
-   "Artificial Intelligence/Machine Learning",
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Arts & Design",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Performance",
    "Physical AI",
    "Real-Time",
-   "Math Foundations and Theory",
-   "Dynamics",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Lighting",
-   "Virtual Reality",
+   "Rendering",
+   "Robotics",
    "Scientific Visualization",
-   "Performance",
-   "Hardware",
-   "Robotics"
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -4412,8 +4413,8 @@ const EVENTS = [
   "room": "Petree D Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -4434,11 +4435,11 @@ const EVENTS = [
    "Daniel Ritchie"
   ],
   "tags": [
-   "Full Conference",
-   "Ethics and Society",
-   "Full Conference Supporter",
    "Production & Animation",
    "Research & Education",
+   "Ethics and Society",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -4469,48 +4470,48 @@ const EVENTS = [
    "Amira Malcom"
   ],
   "tags": [
-   "Full Conference",
+   "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
-   "Research & Education",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Industry Insight",
+   "Display",
+   "Dynamics",
+   "Education",
    "Ethics and Society",
-   "Rendering",
-   "Haptics",
-   "Experience",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
-   "Modeling",
-   "Image Processing",
-   "Artificial Intelligence/Machine Learning",
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Arts & Design",
-   "Physical AI",
-   "Real-Time",
-   "Math Foundations and Theory",
-   "Dynamics",
-   "Pipeline Tools and Work",
    "Generative AI",
-   "Animation",
-   "Simulation",
    "Geometry",
-   "Lighting",
-   "Virtual Reality",
-   "Scientific Visualization",
-   "Performance",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Robotics"
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -4526,8 +4527,8 @@ const EVENTS = [
   "speakers": [],
   "tags": [
    "Arts & Design",
-   "New Technologies",
    "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
    "Research & Education"
   ]
@@ -4550,24 +4551,24 @@ const EVENTS = [
    "Dr. Cai"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Generative AI",
-   "Simulation",
-   "Research & Education",
-   "Geometry",
-   "Full Conference",
    "New Technologies",
-   "Graphics Systems Architecture",
-   "Rendering",
-   "Real-Time",
-   "Experience",
-   "Capture/Scanning",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
    "Digital Twins",
-   "Artificial Intelligence/Machine Learning"
+   "Generative AI",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Simulation",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -4584,15 +4585,15 @@ const EVENTS = [
    "Michael Tanzillo"
   ],
   "tags": [
-   "Animation",
-   "Experience",
-   "Games",
-   "Full Conference",
    "Arts & Design",
    "Production & Animation",
+   "Animation",
+   "Digital Twins",
+   "Games",
    "Industry Insight",
    "Full Conference Supporter",
-   "Digital Twins"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -4613,11 +4614,11 @@ const EVENTS = [
   ],
   "tags": [
    "Gaming & Interactive",
+   "Artificial Intelligence/Machine Learning",
    "Games",
-   "Full Conference",
-   "Full Conference Supporter",
    "Rendering",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -4633,15 +4634,15 @@ const EVENTS = [
   "speakers": [],
   "tags": [
    "Gaming & Interactive",
-   "Real-Time",
    "Research & Education",
-   "Experience",
-   "Games",
-   "Full Conference",
-   "Full Conference Supporter",
    "Education",
+   "Games",
+   "Image Processing",
    "Modeling",
-   "Image Processing"
+   "Real-Time",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -4656,15 +4657,15 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Animation",
-   "Simulation",
-   "Scientific Visualization",
    "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Real-Time",
-   "Full Conference",
-   "Full Conference Supporter",
    "Rendering",
-   "Artificial Intelligence/Machine Learning"
+   "Scientific Visualization",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -4676,17 +4677,17 @@ const EVENTS = [
   "ssid": "none",
   "title": "Generative 3D (2)",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess112",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
    "Research & Education",
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
-   "Modeling",
    "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Geometry",
+   "Modeling",
+   "Rendering",
+   "Robotics",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -4712,14 +4713,14 @@ const EVENTS = [
    "Zeyu Wang"
   ],
   "tags": [
-   "Generative AI",
-   "Art",
-   "Virtual Reality",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Research & Education",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -4743,14 +4744,14 @@ const EVENTS = [
    "Raja Bala"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Animation",
-   "Real-Time",
-   "Full Conference",
    "Production & Animation",
+   "Animation",
    "Industry Insight",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
    "Full Conference Supporter",
-   "Rendering"
+   "Full Conference"
   ]
  },
  {
@@ -4765,14 +4766,14 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Generative AI",
    "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
    "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -4792,49 +4793,49 @@ const EVENTS = [
    "Alex Bryant"
   ],
   "tags": [
-   "Full Conference",
+   "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
-   "Research & Education",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Industry Insight",
+   "Display",
+   "Dynamics",
+   "Education",
    "Ethics and Society",
-   "Rendering",
-   "Haptics",
-   "Experience",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
-   "Modeling",
-   "Image Processing",
-   "Artificial Intelligence/Machine Learning",
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Arts & Design",
-   "Physical AI",
-   "Real-Time",
-   "Math Foundations and Theory",
-   "Dynamics",
-   "Pipeline Tools and Work",
    "Generative AI",
-   "Animation",
-   "Simulation",
    "Geometry",
-   "Lighting",
-   "Discover",
-   "Virtual Reality",
-   "Scientific Visualization",
-   "Performance",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Robotics"
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -4849,16 +4850,16 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Generative AI",
-   "Physical AI",
-   "Simulation",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Computer Vision",
+   "Generative AI",
+   "Physical AI",
+   "Robotics",
+   "Simulation",
    "Full Conference Supporter",
-   "Discover",
-   "Robotics"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -4873,24 +4874,24 @@ const EVENTS = [
   "room": "411 Theatre",
   "speakers": [],
   "tags": [
-   "Spatial Computing",
-   "Animation",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
    "Arts & Design",
-   "Lighting",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Virtual Reality",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Dynamics",
+   "Hardware",
+   "Lighting",
+   "Performance",
    "Real-Time",
    "Scientific Visualization",
-   "Experience",
-   "Performance",
-   "Capture/Scanning",
-   "Audio",
-   "Hardware",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Dynamics"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -4905,8 +4906,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -4922,8 +4923,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -4939,8 +4940,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -4956,8 +4957,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -4973,8 +4974,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -4990,8 +4991,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5007,8 +5008,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5024,8 +5025,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5044,11 +5045,11 @@ const EVENTS = [
    "Rob Jensen"
   ],
   "tags": [
-   "Full Conference",
-   "Animation",
-   "Full Conference Supporter",
    "Production & Animation",
+   "Animation",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5067,12 +5068,12 @@ const EVENTS = [
    "Jean-Francois Panisset"
   ],
   "tags": [
-   "Full Conference",
+   "Production & Animation",
    "Animation",
    "Industry Insight",
-   "Full Conference Supporter",
-   "Production & Animation",
    "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5088,11 +5089,11 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Generative AI",
    "Full Conference Supporter",
-   "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -5107,12 +5108,12 @@ const EVENTS = [
   "room": "Petree C",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Production & Animation",
    "Animation",
    "Full Conference Supporter",
-   "Production & Animation",
-   "Discover",
-   "Experience"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -5134,19 +5135,19 @@ const EVENTS = [
    "Daniel Rice"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Full Conference",
-   "Industry Insight",
-   "Rendering",
-   "Lighting",
-   "Art",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Animation",
+   "Art",
+   "Geometry",
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
    "Modeling",
-   "Image Processing"
+   "Pipeline Tools and Work",
+   "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -5164,22 +5165,22 @@ const EVENTS = [
    "Henrik Edstrom"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Animation",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
-   "Digital Twins",
-   "Graphics Systems Architecture",
-   "Virtual Reality",
-   "Real-Time",
-   "Experience",
-   "Games",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Digital Twins",
+   "Games",
+   "Graphics Systems Architecture",
+   "Modeling",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Modeling"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5196,10 +5197,10 @@ const EVENTS = [
    "Rodney France"
   ],
   "tags": [
-   "Full Conference",
    "Arts & Design",
-   "Full Conference Supporter",
    "Modeling",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5215,14 +5216,14 @@ const EVENTS = [
   "room": "Concourse Foyer",
   "speakers": [],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5237,14 +5238,14 @@ const EVENTS = [
   "room": "Room 511C",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Animation",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Animation",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -5260,45 +5261,45 @@ const EVENTS = [
   "room": "Concourse Hall",
   "speakers": [],
   "tags": [
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Physical AI",
+   "Research & Education",
    "Art",
-   "Real-Time",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
+   "Display",
    "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Research & Education",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
+   "Education",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Full Conference Supporter",
    "Image Processing",
-   "Robotics"
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Robotics",
+   "Scientific Visualization",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
   "day": "2026-07-21",
   "s_utc": "2026-07-21T17:00:00Z",
   "e_utc": "2026-07-21T18:00:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess400",
   "ssid": "misc_167",
   "title": "Emerging Technologies Demo - EgoForce: Forearm-Guided Camera-Space 3D Hand Pose from a Monocular Egocentric Camera",
@@ -5308,8 +5309,8 @@ const EVENTS = [
    "Christen Millerdurai"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5325,14 +5326,14 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
+   "Research & Education",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -5348,35 +5349,35 @@ const EVENTS = [
   "room": "Concourse Hall",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
-   "New Technologies",
    "Arts & Design",
-   "Ethics and Society",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Computer Vision",
-   "Virtual Reality",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Haptics",
-   "Scientific Visualization",
-   "Real-Time",
-   "Experience",
-   "Performance",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Computer Vision",
+   "Digital Twins",
+   "Education",
+   "Ethics and Society",
    "Fabrication",
    "Games",
-   "Audio",
+   "Generative AI",
+   "Haptics",
    "Hardware",
+   "Image Processing",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Digital Twins",
-   "Image Processing"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5391,23 +5392,23 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Simulation",
-   "Full Conference",
-   "Augmented Reality",
    "New Technologies",
-   "Graphics Systems Architecture",
-   "Rendering",
-   "Discover",
-   "Physical AI",
-   "Scientific Visualization",
-   "Real-Time",
-   "Experience",
-   "Capture/Scanning",
-   "Full Conference Supporter",
-   "Digital Twins",
    "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Digital Twins",
+   "Graphics Systems Architecture",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -5425,34 +5426,34 @@ const EVENTS = [
    "Don Greenberg"
   ],
   "tags": [
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Pioneers",
-   "Education",
-   "Real-Time",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Research & Education",
-   "Augmented Reality",
+   "Education",
    "Ethics and Society",
+   "Games",
+   "Generative AI",
    "Graphics Systems Architecture",
    "Industry Insight",
+   "Pioneers",
+   "Real-Time",
    "Rendering",
-   "Virtual Reality",
+   "Robotics",
    "Scientific Visualization",
-   "Experience",
-   "Games",
-   "Capture/Scanning",
-   "Production & Animation",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5470,15 +5471,15 @@ const EVENTS = [
    "Jeff Rochlin"
   ],
   "tags": [
-   "Animation",
-   "Experience",
-   "Full Conference",
    "New Technologies",
+   "Production & Animation",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Hardware",
    "Industry Insight",
    "Full Conference Supporter",
-   "Production & Animation",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5497,16 +5498,16 @@ const EVENTS = [
   ],
   "tags": [
    "Gaming & Interactive",
-   "Full Conference",
    "New Technologies",
-   "Graphics Systems Architecture",
-   "Rendering",
-   "Real-Time",
-   "Performance",
-   "Experience",
+   "Artificial Intelligence/Machine Learning",
    "Games",
+   "Graphics Systems Architecture",
+   "Performance",
+   "Real-Time",
+   "Rendering",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5527,20 +5528,20 @@ const EVENTS = [
    "Whitton Frank"
   ],
   "tags": [
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Animation",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
-   "Education",
-   "Virtual Reality",
-   "Art",
-   "Performance",
-   "Experience",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Education",
+   "Performance",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5555,12 +5556,12 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Discover",
    "Gaming & Interactive",
-   "Experience",
+   "Artificial Intelligence/Machine Learning",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -5575,18 +5576,18 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Physical AI",
-   "Artificial Intelligence/Machine Learning",
-   "Simulation",
-   "Experience",
-   "Full Conference",
    "New Technologies",
+   "Artificial Intelligence/Machine Learning",
    "Capture/Scanning",
-   "Full Conference Supporter",
-   "Rendering",
    "Digital Twins",
-   "Discover",
-   "Robotics"
+   "Physical AI",
+   "Rendering",
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -5598,15 +5599,15 @@ const EVENTS = [
   "ssid": "none",
   "title": "3D Generation",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess121",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Modeling",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Geometry",
+   "Modeling",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -5621,13 +5622,13 @@ const EVENTS = [
   "room": "Petree C",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Performance",
-   "Animation",
-   "Full Conference Supporter",
    "Production & Animation",
-   "Discover",
-   "Experience"
+   "Animation",
+   "Performance",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -5642,8 +5643,8 @@ const EVENTS = [
   "room": "Hall K Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -5658,14 +5659,14 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Virtual Reality",
    "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Rendering",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -5680,33 +5681,33 @@ const EVENTS = [
   "room": "411 Theatre",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Geometry",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
    "Arts & Design",
-   "Ethics and Society",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Lighting",
-   "Physical AI",
+   "Gaming & Interactive",
+   "Production & Animation",
+   "Research & Education",
    "Art",
-   "Virtual Reality",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Digital Twins",
+   "Display",
+   "Dynamics",
+   "Education",
+   "Ethics and Society",
+   "Games",
+   "Geometry",
+   "Hardware",
+   "Lighting",
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
    "Real-Time",
    "Scientific Visualization",
-   "Experience",
-   "Performance",
-   "Games",
-   "Hardware",
-   "Audio",
-   "Production & Animation",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Digital Twins",
-   "Dynamics"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5721,8 +5722,8 @@ const EVENTS = [
   "room": "Hall K",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -5737,13 +5738,13 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Modeling",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
-   "Real-Time",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Modeling",
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -5758,12 +5759,12 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Animation",
+   "Modeling",
    "Simulation",
    "Full Conference Supporter",
-   "Modeling",
-   "Research & Education"
+   "Full Conference"
   ]
  },
  {
@@ -5778,25 +5779,25 @@ const EVENTS = [
   "room": "Room 501 ABC",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Animation",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Computer Vision",
    "Digital Twins",
    "Education",
-   "Rendering",
-   "Computer Vision",
-   "Art",
-   "Experience",
    "Games",
-   "Production & Animation",
+   "Modeling",
+   "Pipeline Tools and Work",
+   "Rendering",
+   "Simulation",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Modeling"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5814,20 +5815,20 @@ const EVENTS = [
    "Bill Sherman"
   ],
   "tags": [
-   "Simulation",
-   "Graphics Systems Architecture",
-   "Scientific Visualization",
-   "Research & Education",
-   "Experience",
-   "Performance",
-   "Real-Time",
-   "Full Conference",
    "New Technologies",
+   "Research & Education",
+   "Digital Twins",
+   "Graphics Systems Architecture",
    "Hardware",
    "Industry Insight",
-   "Full Conference Supporter",
+   "Performance",
+   "Real-Time",
    "Rendering",
-   "Digital Twins"
+   "Scientific Visualization",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5845,11 +5846,11 @@ const EVENTS = [
    "Jesse Lehrman"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Full Conference",
-   "Animation",
-   "Full Conference Supporter",
    "Production & Animation",
+   "Animation",
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5867,10 +5868,10 @@ const EVENTS = [
    "Benjamin Lock"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Full Conference",
    "Production & Animation",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5888,12 +5889,12 @@ const EVENTS = [
    "Robin-Yann Storm"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Full Conference",
-   "New Technologies",
    "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5909,23 +5910,23 @@ const EVENTS = [
   "room": "Room 511C",
   "speakers": [],
   "tags": [
+   "New Technologies",
+   "Artificial Intelligence/Machine Learning",
+   "Education",
    "Pipeline Tools and Work",
    "Real-Time",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
-   "Discover",
-   "Education",
    "Rendering",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
   "day": "2026-07-21",
   "s_utc": "2026-07-21T18:10:00Z",
   "e_utc": "2026-07-21T19:10:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess399",
   "ssid": "misc_168",
   "title": "Emerging Technologies Demo - LightOpt: Lights Optimization for Real-time Rendering",
@@ -5935,8 +5936,8 @@ const EVENTS = [
    "Luyan Cao"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -5954,25 +5955,25 @@ const EVENTS = [
    "Kevin Peter He"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Industry Insight",
-   "Education",
+   "Production & Animation",
+   "Research & Education",
    "Art",
-   "Real-Time",
-   "Performance",
+   "Education",
    "Fabrication",
    "Games",
-   "Experience",
    "Hardware",
+   "Industry Insight",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Simulation",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Production & Animation"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -5987,17 +5988,17 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Capture/Scanning",
-   "Discover",
    "Production & Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
    "Computer Vision",
-   "Rendering",
    "Digital Twins",
+   "Rendering",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -6012,15 +6013,15 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
+   "New Technologies",
+   "Artificial Intelligence/Machine Learning",
+   "Digital Twins",
    "Physical AI",
    "Real-Time",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
    "Full Conference Supporter",
-   "Digital Twins",
-   "Discover",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -6038,12 +6039,12 @@ const EVENTS = [
    "Theresa-Marie Rhyne"
   ],
   "tags": [
-   "Scientific Visualization",
    "Research & Education",
-   "Experience",
-   "Full Conference",
    "Education",
-   "Full Conference Supporter"
+   "Scientific Visualization",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6058,14 +6059,14 @@ const EVENTS = [
   "room": "Petree C",
   "speakers": [],
   "tags": [
-   "Animation",
-   "Artificial Intelligence/Machine Learning",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -6083,14 +6084,14 @@ const EVENTS = [
    "Christopher Hebert"
   ],
   "tags": [
+   "New Technologies",
+   "Artificial Intelligence/Machine Learning",
+   "Computer Vision",
    "Generative AI",
    "Real-Time",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
-   "Computer Vision",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6105,10 +6106,10 @@ const EVENTS = [
   "room": "Concourse Hall",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Spatial Computing",
    "Art",
+   "Spatial Computing",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -6124,8 +6125,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -6133,7 +6134,7 @@ const EVENTS = [
   "day": "2026-07-21",
   "s_utc": "2026-07-21T19:20:00Z",
   "e_utc": "2026-07-21T20:20:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess398",
   "ssid": "misc_169",
   "title": "Emerging Technologies Demo - MUSIC: Learning Muscle-Driven Dexterous Hand Control",
@@ -6143,8 +6144,8 @@ const EVENTS = [
    "Pei Xu"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -6160,8 +6161,8 @@ const EVENTS = [
   "room": "Hall K Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -6176,8 +6177,8 @@ const EVENTS = [
   "room": "411 Theatre",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -6196,12 +6197,12 @@ const EVENTS = [
    "Jesse Lehrman"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Full Conference",
-   "Animation",
-   "Full Conference Supporter",
    "Production & Animation",
+   "Animation",
    "Artificial Intelligence/Machine Learning",
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -6220,18 +6221,18 @@ const EVENTS = [
    "Jonny Cohen"
   ],
   "tags": [
-   "Spatial Computing",
+   "Arts & Design",
    "Gaming & Interactive",
    "Research & Education",
-   "Full Conference",
-   "Arts & Design",
-   "Ethics and Society",
    "Art",
-   "Real-Time",
-   "Experience",
+   "Ethics and Society",
    "Fabrication",
+   "Real-Time",
+   "Robotics",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Robotics"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6246,13 +6247,13 @@ const EVENTS = [
   "room": "Room 511C",
   "speakers": [],
   "tags": [
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Real-Time",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -6270,12 +6271,12 @@ const EVENTS = [
    "William Joel"
   ],
   "tags": [
-   "Games",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Education",
-   "Computer Vision",
    "Research & Education",
+   "Computer Vision",
+   "Education",
+   "Games",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -6294,42 +6295,42 @@ const EVENTS = [
    "Bonnie Mitchell"
   ],
   "tags": [
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Physical AI",
-   "Art",
-   "Real-Time",
-   "Computer Vision",
-   "Math Foundations and Theory",
-   "Digital Twins",
-   "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Simulation",
-   "Research & Education",
-   "Modeling",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Industry Insight",
-   "Ethics and Society",
-   "Rendering",
-   "Lighting",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
-   "Fabrication",
-   "Capture/Scanning",
-   "Hardware",
-   "Full Conference Supporter",
    "Production & Animation",
+   "Research & Education",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Computer Vision",
+   "Digital Twins",
+   "Display",
+   "Dynamics",
+   "Education",
+   "Ethics and Society",
+   "Fabrication",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Hardware",
    "Image Processing",
-   "Robotics"
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6344,24 +6345,24 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Generative AI",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
+   "Production & Animation",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Computer Vision",
+   "Generative AI",
    "Graphics Systems Architecture",
-   "Rendering",
-   "Full Conference Supporter",
-   "Discover",
    "Physical AI",
    "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Simulation",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience",
-   "Production & Animation",
-   "Computer Vision",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Discover"
   ]
  },
  {
@@ -6376,19 +6377,19 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Physical AI",
-   "Artificial Intelligence/Machine Learning",
-   "Simulation",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "New Technologies",
+   "Artificial Intelligence/Machine Learning",
    "Capture/Scanning",
-   "Full Conference Supporter",
-   "Rendering",
    "Digital Twins",
-   "Discover",
-   "Robotics"
+   "Physical AI",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -6407,12 +6408,12 @@ const EVENTS = [
    "Yinch Yeap"
   ],
   "tags": [
-   "Full Conference",
-   "Spatial Computing",
-   "Augmented Reality",
    "New Technologies",
-   "Full Conference Supporter",
+   "Augmented Reality",
    "Digital Twins",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -6434,28 +6435,28 @@ const EVENTS = [
    "Marc Olano"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Image Processing",
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Animation",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
    "New Technologies",
-   "Graphics Systems Architecture",
-   "Industry Insight",
-   "Rendering",
-   "Art",
-   "Real-Time",
-   "Scientific Visualization",
-   "Experience",
-   "Games",
-   "Hardware",
-   "Full Conference Supporter",
    "Production & Animation",
-   "Artificial Intelligence/Machine Learning"
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Augmented Reality",
+   "Games",
+   "Graphics Systems Architecture",
+   "Hardware",
+   "Image Processing",
+   "Industry Insight",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6479,22 +6480,22 @@ const EVENTS = [
    "Tim McGraw"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Animation",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
-   "Ethics and Society",
-   "Education",
-   "Physical AI",
-   "Art",
-   "Real-Time",
-   "Performance",
-   "Experience",
-   "Games",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Education",
+   "Ethics and Society",
+   "Games",
+   "Performance",
+   "Physical AI",
+   "Real-Time",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6509,14 +6510,14 @@ const EVENTS = [
   "room": "Petree C",
   "speakers": [],
   "tags": [
-   "Generative AI",
-   "Animation",
-   "Artificial Intelligence/Machine Learning",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -6524,7 +6525,7 @@ const EVENTS = [
   "day": "2026-07-21",
   "s_utc": "2026-07-21T20:30:00Z",
   "e_utc": "2026-07-21T21:30:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess397",
   "ssid": "misc_170",
   "title": "Emerging Technologies Demo - Sketch2Arti: Sketch-based Articulation Modeling of CAD Objects",
@@ -6534,8 +6535,8 @@ const EVENTS = [
    "Changjian Li"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -6557,11 +6558,11 @@ const EVENTS = [
   ],
   "tags": [
    "Gaming & Interactive",
+   "Artificial Intelligence/Machine Learning",
    "Games",
-   "Full Conference",
-   "Full Conference Supporter",
    "Rendering",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -6576,27 +6577,27 @@ const EVENTS = [
   "room": "411 Theatre",
   "speakers": [],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Full Conference",
    "Arts & Design",
-   "Ethics and Society",
-   "Computer Vision",
-   "Physical AI",
+   "Animation",
    "Art",
-   "Real-Time",
-   "Scientific Visualization",
-   "Experience",
-   "Capture/Scanning",
-   "Audio",
-   "Hardware",
-   "Full Conference Supporter",
    "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Audio",
+   "Capture/Scanning",
+   "Computer Vision",
+   "Display",
+   "Ethics and Society",
+   "Generative AI",
+   "Hardware",
+   "Image Processing",
+   "Physical AI",
+   "Real-Time",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6611,17 +6612,17 @@ const EVENTS = [
   "room": "Room 511C",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
    "Gaming & Interactive",
-   "Art",
-   "Real-Time",
-   "Performance",
-   "Experience",
-   "Games",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter",
+   "Art",
+   "Games",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -6637,10 +6638,10 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -6666,14 +6667,14 @@ const EVENTS = [
    "Di Wu"
   ],
   "tags": [
+   "New Technologies",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Computer Vision",
    "Generative AI",
    "Virtual Reality",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
-   "Computer Vision",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -6695,15 +6696,15 @@ const EVENTS = [
    "Dominik Käser"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Virtual Reality",
-   "Real-Time",
-   "Performance",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter"
+   "Performance",
+   "Real-Time",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6718,13 +6719,13 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Modeling",
+   "Rendering",
    "Simulation",
    "Full Conference Supporter",
-   "Rendering",
-   "Modeling",
-   "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -6739,13 +6740,13 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Robotics",
    "Simulation",
    "Full Conference Supporter",
-   "Research & Education",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Full Conference"
   ]
  },
  {
@@ -6760,19 +6761,19 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Physical AI",
-   "Simulation",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Capture/Scanning",
-   "Full Conference Supporter",
-   "Rendering",
-   "Digital Twins",
-   "Discover",
    "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Capture/Scanning",
+   "Digital Twins",
+   "Physical AI",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -6784,16 +6785,16 @@ const EVENTS = [
   "ssid": "none",
   "title": "Parametric Surfaces",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess125",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
+   "Research & Education",
+   "Fabrication",
    "Geometry",
-   "Full Conference",
+   "Modeling",
    "Simulation",
    "Full Conference Supporter",
-   "Modeling",
-   "Research & Education",
-   "Fabrication"
+   "Full Conference"
   ]
  },
  {
@@ -6808,29 +6809,29 @@ const EVENTS = [
   "room": "Room 501 ABC",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Generative AI",
-   "Animation",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Ethics and Society",
-   "Education",
-   "Rendering",
-   "Virtual Reality",
-   "Art",
-   "Real-Time",
-   "Experience",
-   "Performance",
-   "Capture/Scanning",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Education",
+   "Ethics and Society",
+   "Generative AI",
+   "Math Foundations and Theory",
    "Modeling",
-   "Math Foundations and Theory"
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6845,28 +6846,28 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Gaming & Interactive",
-   "Animation",
-   "Simulation",
-   "Modeling",
-   "Full Conference",
-   "Augmented Reality",
-   "New Technologies",
    "Arts & Design",
-   "Industry Insight",
-   "Rendering",
-   "Discover",
-   "Art",
-   "Virtual Reality",
-   "Real-Time",
-   "Performance",
-   "Experience",
-   "Games",
-   "Capture/Scanning",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
+   "Animation",
+   "Art",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Digital Twins",
+   "Games",
+   "Industry Insight",
+   "Modeling",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Simulation",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Digital Twins"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -6886,54 +6887,54 @@ const EVENTS = [
    "Matt Adcock"
   ],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Networking",
-   "Gaming & Interactive",
-   "Full Conference",
-   "Chapters",
-   "New Technologies",
    "Arts & Design",
-   "Pioneers",
-   "Education",
-   "Diversity, Equity and Inclusion",
-   "Physical AI",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Real-Time",
-   "Visual Effects",
-   "Hardware",
-   "Math Foundations and Theory",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Chapters",
    "Computer Vision",
    "Digital Twins",
+   "Display",
+   "Diversity, Equity and Inclusion",
    "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Research & Education",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Industry Insight",
-   "History",
-   "Rendering",
+   "Education",
    "Ethics and Society",
-   "Lighting",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
+   "Generative AI",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Haptics",
+   "Hardware",
+   "History",
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
    "Modeling",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Networking",
+   "Performance",
+   "Physical AI",
+   "Pioneers",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6952,15 +6953,15 @@ const EVENTS = [
    "Michele Sciolette"
   ],
   "tags": [
-   "Generative AI",
-   "Simulation",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
    "Rendering",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -6981,17 +6982,17 @@ const EVENTS = [
    "Sean Donnelly"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Gaming & Interactive",
-   "Animation",
-   "Geometry",
-   "Full Conference",
    "Arts & Design",
-   "Art",
-   "Performance",
-   "Games",
+   "Gaming & Interactive",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Animation",
+   "Art",
+   "Games",
+   "Geometry",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -7006,13 +7007,13 @@ const EVENTS = [
   "room": "Petree C",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Lighting",
-   "Animation",
-   "Full Conference Supporter",
    "Production & Animation",
-   "Discover",
-   "Experience"
+   "Animation",
+   "Lighting",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -7030,31 +7031,31 @@ const EVENTS = [
    "Lukasz Mirocha, PhD"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Generative AI",
-   "Simulation",
-   "Full Conference",
-   "Augmented Reality",
-   "New Technologies",
    "Arts & Design",
-   "Education",
-   "Rendering",
-   "Artificial Intelligence/Machine Learning",
-   "Physical AI",
-   "Virtual Reality",
-   "Real-Time",
-   "Visual Effects",
-   "Scientific Visualization",
-   "Experience",
-   "Games",
-   "Capture/Scanning",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
+   "Education",
+   "Games",
+   "Generative AI",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Visual Effects",
    "Full Conference Supporter",
-   "Robotics"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -7071,14 +7072,14 @@ const EVENTS = [
    "Darwesh Singh"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
    "Production & Animation",
+   "Research & Education",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -7086,7 +7087,7 @@ const EVENTS = [
   "day": "2026-07-21",
   "s_utc": "2026-07-21T21:40:00Z",
   "e_utc": "2026-07-21T22:40:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess396",
   "ssid": "misc_171",
   "title": "Emerging Technologies Demo - A LoD of Gaussians: Out-of-Core Training and Rendering for Seamless Ultra-Large Scene Reconstruction",
@@ -7096,8 +7097,8 @@ const EVENTS = [
    "Felix Windisch"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -7115,17 +7116,17 @@ const EVENTS = [
    "Andrew Glassner"
   ],
   "tags": [
-   "Simulation",
-   "Full Conference",
    "New Technologies",
-   "Education",
    "Artificial Intelligence/Machine Learning",
    "Computer Vision",
-   "Full Conference Supporter",
-   "Performance",
-   "Experience",
+   "Education",
+   "Image Processing",
    "Math Foundations and Theory",
-   "Image Processing"
+   "Performance",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -7140,15 +7141,15 @@ const EVENTS = [
   "room": "Room 511C",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
    "Gaming & Interactive",
-   "Real-Time",
-   "Experience",
-   "Games",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter",
+   "Games",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -7167,12 +7168,12 @@ const EVENTS = [
    "Fran Zandonella Benjamin"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Full Conference",
-   "New Technologies",
    "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -7188,22 +7189,22 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
    "Gaming & Interactive",
-   "Full Conference",
    "New Technologies",
-   "Graphics Systems Architecture",
-   "Industry Insight",
-   "Rendering",
-   "Discover",
-   "Real-Time",
-   "Performance",
-   "Experience",
-   "Games",
-   "Hardware",
-   "Full Conference Supporter",
    "Production & Animation",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Games",
+   "Graphics Systems Architecture",
+   "Hardware",
+   "Industry Insight",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -7218,18 +7219,18 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Full Conference Supporter",
-   "Physical AI",
-   "Generative AI",
-   "Simulation",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "New Technologies",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
+   "Generative AI",
+   "Physical AI",
+   "Real-Time",
    "Rendering",
-   "Discover",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -7248,15 +7249,15 @@ const EVENTS = [
    "Aleks Pejic"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Animation",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
+   "New Technologies",
    "Production & Animation",
+   "Animation",
    "Industry Insight",
-   "Full Conference Supporter"
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -7273,27 +7274,27 @@ const EVENTS = [
    "ANITA HAVELE"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Animation",
-   "Simulation",
-   "Scientific Visualization",
-   "Research & Education",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
-   "Rendering",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Digital Twins",
-   "Artificial Intelligence/Machine Learning"
+   "Real-Time",
+   "Rendering",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
   "day": "2026-07-21",
   "s_utc": "2026-07-21T22:15:00Z",
   "e_utc": "2026-07-22T00:00:00Z",
-  "type": "Spatial Storytelling",
+  "type": "Immersive Pavilion",
   "psid": "sess380",
   "ssid": "gensubcur105",
   "title": "Roll for Reality: Virtual Production Improvised D&D Show",
@@ -7305,14 +7306,14 @@ const EVENTS = [
    "Luke Tannenbaum"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Virtual Reality",
-   "Performance",
-   "Experience",
    "Games",
+   "Performance",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
    "Full Conference",
-   "Full Conference Supporter"
+   "Experience"
   ]
  },
  {
@@ -7329,48 +7330,48 @@ const EVENTS = [
    "Amira Malcom"
   ],
   "tags": [
-   "Full Conference",
+   "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
-   "Research & Education",
-   "Augmented Reality",
+   "Display",
+   "Dynamics",
+   "Education",
    "Ethics and Society",
-   "Graphics Systems Architecture",
-   "Industry Insight",
-   "Rendering",
-   "Haptics",
-   "Experience",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
-   "Modeling",
-   "Artificial Intelligence/Machine Learning",
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Arts & Design",
-   "Physical AI",
-   "Real-Time",
-   "Math Foundations and Theory",
-   "Dynamics",
-   "Pipeline Tools and Work",
    "Generative AI",
-   "Animation",
-   "Simulation",
    "Geometry",
-   "Lighting",
-   "Virtual Reality",
-   "Scientific Visualization",
-   "Performance",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Robotics"
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -7385,8 +7386,8 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -7402,20 +7403,20 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Art",
-   "Animation",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Ethics and Society",
-   "Industry Insight",
-   "Full Conference Supporter",
    "Production & Animation",
-   "Artificial Intelligence/Machine Learning"
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Ethics and Society",
+   "Generative AI",
+   "Industry Insight",
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -7430,12 +7431,12 @@ const EVENTS = [
   "room": "Petree C",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Production & Animation",
    "Animation",
    "Full Conference Supporter",
-   "Production & Animation",
-   "Discover",
-   "Experience"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -7453,17 +7454,17 @@ const EVENTS = [
    "Urska Jelercic"
   ],
   "tags": [
-   "Generative AI",
-   "Animation",
-   "Full Conference",
    "New Technologies",
-   "Rendering",
-   "Full Conference Supporter",
+   "Animation",
    "Art",
+   "Artificial Intelligence/Machine Learning",
    "Audio",
    "Computer Vision",
    "Digital Twins",
-   "Artificial Intelligence/Machine Learning"
+   "Generative AI",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -7478,17 +7479,17 @@ const EVENTS = [
   "room": "Room 501 ABC",
   "speakers": [],
   "tags": [
-   "Gaming & Interactive",
-   "Art",
-   "Animation",
-   "Scientific Visualization",
-   "Research & Education",
-   "Experience",
-   "Games",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Education",
+   "Games",
+   "Scientific Visualization",
    "Full Conference Supporter",
-   "Education"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -7500,23 +7501,23 @@ const EVENTS = [
   "ssid": "none",
   "title": "Playing With Fire (and Water)",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess171",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Art",
-   "Simulation",
-   "Animation",
-   "Dynamics",
-   "Research & Education",
-   "Full Conference",
-   "Capture/Scanning",
    "Production & Animation",
-   "Industry Insight",
-   "Full Conference Supporter",
-   "Rendering",
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Capture/Scanning",
    "Digital Twins",
-   "Lighting"
+   "Dynamics",
+   "Industry Insight",
+   "Lighting",
+   "Pipeline Tools and Work",
+   "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -7539,18 +7540,18 @@ const EVENTS = [
    "Kyle Winkelman"
   ],
   "tags": [
-   "Generative AI",
-   "Animation",
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Animation",
+   "Generative AI",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
   "day": "2026-07-21",
   "s_utc": "2026-07-21T22:50:00Z",
   "e_utc": "2026-07-21T23:50:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess395",
   "ssid": "misc_172",
   "title": "Emerging Technologies Demo - AGILE: Hand-object Interaction Reconstruction from Video via Agentic Generation",
@@ -7560,8 +7561,8 @@ const EVENTS = [
    "Hao Chen"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -7577,19 +7578,19 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Generative AI",
+   "Arts & Design",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Production & Animation",
    "Animation",
    "Art",
-   "Gaming & Interactive",
    "Artificial Intelligence/Machine Learning",
-   "Experience",
    "Games",
-   "Full Conference",
-   "New Technologies",
-   "Arts & Design",
-   "Production & Animation",
-   "Full Conference Supporter",
+   "Generative AI",
    "Modeling",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -7609,15 +7610,15 @@ const EVENTS = [
    "David Lin"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Art",
    "Research & Education",
-   "Experience",
-   "Full Conference",
-   "Ethics and Society",
+   "Art",
    "Education",
+   "Ethics and Society",
+   "Image Processing",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
-   "Image Processing"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -7632,13 +7633,13 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "New Technologies",
    "Physical AI",
    "Simulation",
    "Full Conference Supporter",
-   "Discover",
-   "Experience"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -7655,21 +7656,21 @@ const EVENTS = [
    "Yosun Chang"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
+   "Arts & Design",
    "Gaming & Interactive",
+   "New Technologies",
+   "Production & Animation",
    "Research & Education",
-   "Experience",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
    "Fabrication",
    "Games",
-   "Full Conference",
-   "New Technologies",
-   "Arts & Design",
-   "Capture/Scanning",
    "Graphics Systems Architecture",
+   "Pipeline Tools and Work",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Production & Animation",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -7688,10 +7689,10 @@ const EVENTS = [
    "Emilie Yu"
   ],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Ethics and Society",
    "Full Conference Supporter",
-   "Research & Education",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -7710,9 +7711,9 @@ const EVENTS = [
    "Edward Kramer"
   ],
   "tags": [
-   "Pioneers",
+   "Research & Education",
    "Industry Insight",
-   "Research & Education"
+   "Pioneers"
   ]
  },
  {
@@ -7727,33 +7728,33 @@ const EVENTS = [
   "room": "Hall K",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Gaming & Interactive",
-   "Geometry",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
-   "Digital Twins",
-   "Graphics Systems Architecture",
-   "Artificial Intelligence/Machine Learning",
-   "Rendering",
-   "Computer Vision",
-   "Physical AI",
-   "Art",
-   "Real-Time",
-   "Scientific Visualization",
-   "Performance",
-   "Games",
-   "Hardware",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
-   "Modeling",
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Computer Vision",
+   "Digital Twins",
    "Dynamics",
-   "Robotics"
+   "Games",
+   "Generative AI",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Hardware",
+   "Modeling",
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -7768,8 +7769,8 @@ const EVENTS = [
   "room": "Hall K Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -7786,12 +7787,12 @@ const EVENTS = [
    "Christopher Torng"
   ],
   "tags": [
-   "Physical AI",
    "Research & Education",
-   "Experience",
-   "Full Conference",
    "Hardware",
-   "Full Conference Supporter"
+   "Physical AI",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -7807,8 +7808,8 @@ const EVENTS = [
   "speakers": [],
   "tags": [
    "Arts & Design",
-   "New Technologies",
    "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
    "Research & Education"
   ]
@@ -7836,18 +7837,18 @@ const EVENTS = [
    "Maneesh Agrawala"
   ],
   "tags": [
-   "Image Processing",
-   "Generative AI",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Full Conference Supporter",
-   "Art",
    "Production & Animation",
+   "Research & Education",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
-   "Artificial Intelligence/Machine Learning"
+   "Generative AI",
+   "Image Processing",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -7871,18 +7872,18 @@ const EVENTS = [
    "Stephanie Hurlburt"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Real-Time",
-   "Research & Education",
-   "Experience",
-   "Performance",
-   "Games",
-   "Full Conference",
    "New Technologies",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Games",
    "Graphics Systems Architecture",
+   "Performance",
+   "Real-Time",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -7897,16 +7898,16 @@ const EVENTS = [
   "room": "Room 501 ABC",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Animation",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Education",
    "Industry Insight",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
-   "Education"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -7921,12 +7922,12 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
-   "Real-Time",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -7945,10 +7946,10 @@ const EVENTS = [
    "Stefan Zellmann"
   ],
   "tags": [
-   "Full Conference",
    "New Technologies",
+   "Rendering",
    "Full Conference Supporter",
-   "Rendering"
+   "Full Conference"
   ]
  },
  {
@@ -7960,16 +7961,16 @@ const EVENTS = [
   "ssid": "none",
   "title": "Hair, Fur & Feathers",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess119",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
-   "Modeling",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Geometry",
+   "Modeling",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -7989,12 +7990,12 @@ const EVENTS = [
   ],
   "tags": [
    "Gaming & Interactive",
-   "Real-Time",
-   "Games",
-   "Full Conference",
    "Education",
+   "Games",
+   "Real-Time",
    "Rendering",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -8009,12 +8010,12 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Generative AI",
-   "Full Conference Supporter",
-   "Modeling",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Modeling",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -8029,13 +8030,13 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Robotics",
    "Simulation",
    "Full Conference Supporter",
-   "Research & Education",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Full Conference"
   ]
  },
  {
@@ -8056,21 +8057,21 @@ const EVENTS = [
    "Nicolas Liatti"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
    "Gaming & Interactive",
+   "New Technologies",
+   "Production & Animation",
+   "Animation",
+   "Education",
+   "Ethics and Society",
+   "Fabrication",
+   "Generative AI",
+   "Industry Insight",
+   "Pipeline Tools and Work",
    "Real-Time",
    "Visual Effects",
-   "Experience",
-   "Fabrication",
+   "Full Conference Supporter",
    "Full Conference",
-   "New Technologies",
-   "Ethics and Society",
-   "Industry Insight",
-   "Education",
-   "Production & Animation",
-   "Full Conference Supporter"
+   "Experience"
   ]
  },
  {
@@ -8085,16 +8086,16 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Physical AI",
-   "Real-Time",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter",
-   "Rendering",
+   "Research & Education",
    "Digital Twins",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -8110,17 +8111,17 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Simulation",
-   "Real-Time",
-   "Geometry",
-   "Experience",
-   "Full Conference",
-   "Hardware",
-   "Capture/Scanning",
-   "Graphics Systems Architecture",
-   "Full Conference Supporter",
-   "Rendering",
    "Production & Animation",
+   "Capture/Scanning",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Hardware",
+   "Real-Time",
+   "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -8139,18 +8140,18 @@ const EVENTS = [
    "Marc Olano"
   ],
   "tags": [
-   "Image Processing",
-   "Animation",
-   "Simulation",
    "Research & Education",
+   "Animation",
+   "Dynamics",
    "Geometry",
-   "Full Conference",
-   "Rendering",
-   "Full Conference Supporter",
    "Hardware",
+   "Image Processing",
    "Math Foundations and Theory",
    "Modeling",
-   "Dynamics"
+   "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -8165,8 +8166,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8182,8 +8183,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8199,8 +8200,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8216,8 +8217,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8233,8 +8234,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8250,8 +8251,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8267,8 +8268,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8284,8 +8285,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8306,23 +8307,23 @@ const EVENTS = [
    "Curtis Andrus"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Gaming & Interactive",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Industry Insight",
-   "Education",
-   "Art",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
-   "Games",
    "Production & Animation",
+   "Research & Education",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Education",
+   "Games",
+   "Industry Insight",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Scientific Visualization",
+   "Simulation",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -8339,11 +8340,11 @@ const EVENTS = [
   "tags": [
    "Gaming & Interactive",
    "Animation",
-   "Real-Time",
-   "Experience",
    "Games",
-   "Full Conference",
+   "Real-Time",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -8359,15 +8360,15 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Artificial Intelligence/Machine Learning",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
-   "Capture/Scanning",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -8387,19 +8388,19 @@ const EVENTS = [
    "Ron Radeztsky"
   ],
   "tags": [
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Full Conference",
-   "Rendering",
-   "Lighting",
-   "Art",
-   "Scientific Visualization",
-   "Real-Time",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Animation",
+   "Art",
+   "Dynamics",
+   "Geometry",
+   "Lighting",
    "Modeling",
-   "Dynamics"
+   "Real-Time",
+   "Rendering",
+   "Scientific Visualization",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -8414,14 +8415,14 @@ const EVENTS = [
   "room": "Concourse Foyer",
   "speakers": [],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -8436,45 +8437,45 @@ const EVENTS = [
   "room": "Concourse Hall",
   "speakers": [],
   "tags": [
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Physical AI",
+   "Research & Education",
    "Art",
-   "Real-Time",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
+   "Display",
    "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Research & Education",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
+   "Education",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Full Conference Supporter",
    "Image Processing",
-   "Robotics"
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Robotics",
+   "Scientific Visualization",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
   "day": "2026-07-22",
   "s_utc": "2026-07-22T17:00:00Z",
   "e_utc": "2026-07-22T18:00:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess403",
   "ssid": "misc_176",
   "title": "Emerging Technologies Demo - GauSmoke: Hybrid Physics-Optical Gaussian Splatting for Sparse Smoke Reconstruction",
@@ -8484,8 +8485,8 @@ const EVENTS = [
    "Ren Bo"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8501,14 +8502,14 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
+   "Research & Education",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -8526,21 +8527,21 @@ const EVENTS = [
    "Eloi Champagne"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Real-Time",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
-   "Augmented Reality",
    "New Technologies",
-   "Capture/Scanning",
    "Production & Animation",
-   "Industry Insight",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Digital Twins",
-   "Image Processing"
+   "Image Processing",
+   "Industry Insight",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -8564,21 +8565,21 @@ const EVENTS = [
    "Ian Williams"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Virtual Reality",
-   "Geometry",
-   "Research & Education",
-   "Experience",
-   "Modeling",
-   "Full Conference",
    "New Technologies",
+   "Production & Animation",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Capture/Scanning",
    "Computer Vision",
+   "Geometry",
    "Graphics Systems Architecture",
+   "Modeling",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Production & Animation",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -8596,17 +8597,17 @@ const EVENTS = [
    "Shane Reetz"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Simulation",
-   "Full Conference",
    "New Technologies",
-   "Physical AI",
-   "Real-Time",
-   "Experience",
-   "Full Conference Supporter",
-   "Digital Twins",
    "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Digital Twins",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -8621,35 +8622,35 @@ const EVENTS = [
   "room": "Concourse Hall",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
-   "New Technologies",
    "Arts & Design",
-   "Ethics and Society",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Computer Vision",
-   "Virtual Reality",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Haptics",
-   "Scientific Visualization",
-   "Real-Time",
-   "Experience",
-   "Performance",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Computer Vision",
+   "Digital Twins",
+   "Education",
+   "Ethics and Society",
    "Fabrication",
    "Games",
-   "Audio",
+   "Generative AI",
+   "Haptics",
    "Hardware",
+   "Image Processing",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Digital Twins",
-   "Image Processing"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -8664,15 +8665,15 @@ const EVENTS = [
   "room": "",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Artificial Intelligence/Machine Learning",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
-   "Capture/Scanning",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -8692,12 +8693,12 @@ const EVENTS = [
    "Jimmy Rotella"
   ],
   "tags": [
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
-   "Rendering",
    "Artificial Intelligence/Machine Learning",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8716,16 +8717,16 @@ const EVENTS = [
    "Sarah Ciston"
   ],
   "tags": [
-   "Spatial Computing",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
-   "Ethics and Society",
-   "Virtual Reality",
+   "Research & Education",
    "Art",
+   "Ethics and Society",
    "Scientific Visualization",
-   "Experience",
-   "Full Conference Supporter"
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -8740,8 +8741,8 @@ const EVENTS = [
   "room": "Room 404 AB",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -8757,14 +8758,14 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Generative AI",
-   "Artificial Intelligence/Machine Learning",
-   "Experience",
-   "Full Conference",
-   "Capture/Scanning",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
+   "Generative AI",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -8780,16 +8781,16 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
+   "New Technologies",
+   "Artificial Intelligence/Machine Learning",
    "Generative AI",
    "Physical AI",
+   "Robotics",
    "Simulation",
-   "Artificial Intelligence/Machine Learning",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
    "Full Conference Supporter",
-   "Discover",
-   "Robotics"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -8804,12 +8805,12 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Animation",
+   "Modeling",
    "Simulation",
    "Full Conference Supporter",
-   "Modeling",
-   "Research & Education"
+   "Full Conference"
   ]
  },
  {
@@ -8824,13 +8825,13 @@ const EVENTS = [
   "room": "Petree C",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Capture/Scanning",
-   "Animation",
-   "Full Conference Supporter",
    "Production & Animation",
-   "Discover",
-   "Experience"
+   "Animation",
+   "Capture/Scanning",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -8845,21 +8846,21 @@ const EVENTS = [
   "room": "Room 501 ABC",
   "speakers": [],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Virtual Reality",
-   "Scientific Visualization",
-   "Real-Time",
-   "Experience",
-   "Research & Education",
-   "Games",
-   "Full Conference",
-   "Augmented Reality",
    "New Technologies",
-   "Full Conference Supporter",
-   "Education",
+   "Research & Education",
+   "Augmented Reality",
    "Digital Twins",
-   "Image Processing"
+   "Education",
+   "Games",
+   "Image Processing",
+   "Real-Time",
+   "Scientific Visualization",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -8874,16 +8875,16 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Physical AI",
-   "Generative AI",
-   "Simulation",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Generative AI",
+   "Physical AI",
+   "Pipeline Tools and Work",
    "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -8899,15 +8900,15 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Generative AI",
-   "Simulation",
    "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
    "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -8919,16 +8920,16 @@ const EVENTS = [
   "ssid": "none",
   "title": "Reconstruction & Sampling",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess124",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
-   "Modeling",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Geometry",
+   "Modeling",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -8943,8 +8944,8 @@ const EVENTS = [
   "room": "Hall K Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -8959,14 +8960,14 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Real-Time",
    "Research & Education",
    "Geometry",
-   "Full Conference",
    "Hardware",
-   "Full Conference Supporter",
+   "Modeling",
+   "Real-Time",
    "Rendering",
-   "Modeling"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -8983,15 +8984,15 @@ const EVENTS = [
    "Troy McFarland"
   ],
   "tags": [
+   "Production & Animation",
    "Animation",
-   "Visual Effects",
-   "Experience",
-   "Games",
-   "Full Conference",
    "Capture/Scanning",
+   "Games",
    "Hardware",
+   "Visual Effects",
    "Full Conference Supporter",
-   "Production & Animation"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9006,23 +9007,23 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Real-Time",
-   "Experience",
-   "Performance",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Lighting",
+   "Performance",
+   "Real-Time",
    "Rendering",
-   "Discover",
-   "Lighting"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
   "day": "2026-07-22",
   "s_utc": "2026-07-22T18:10:00Z",
   "e_utc": "2026-07-22T19:10:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess405",
   "ssid": "misc_174",
   "title": "Emerging Technologies Demo - MotionBricks: Scalable Real-Time Motions with Modular Latent Generative Model and Smart Primitives",
@@ -9032,8 +9033,8 @@ const EVENTS = [
    "Tingwu Wang"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -9056,17 +9057,17 @@ const EVENTS = [
    "Jesse Hollander"
   ],
   "tags": [
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Full Conference",
-   "Rendering",
-   "Lighting",
-   "Art",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Animation",
+   "Art",
+   "Dynamics",
+   "Geometry",
+   "Lighting",
    "Modeling",
-   "Dynamics"
+   "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -9083,24 +9084,24 @@ const EVENTS = [
    "Michela Ledwidge"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Full Conference",
-   "Education",
-   "Real-Time",
-   "Digital Twins",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Simulation",
-   "Research & Education",
-   "Industry Insight",
-   "Virtual Reality",
-   "Experience",
-   "Games",
-   "Capture/Scanning",
    "Production & Animation",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
+   "Digital Twins",
+   "Education",
+   "Games",
+   "Generative AI",
+   "Industry Insight",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9118,21 +9119,21 @@ const EVENTS = [
    "Bill Sherman"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Simulation",
-   "Real-Time",
-   "Scientific Visualization",
-   "Performance",
-   "Experience",
-   "Research & Education",
-   "Full Conference",
-   "Hardware",
    "New Technologies",
+   "Research & Education",
+   "Digital Twins",
    "Graphics Systems Architecture",
+   "Hardware",
    "Industry Insight",
-   "Full Conference Supporter",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
-   "Digital Twins"
+   "Scientific Visualization",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9147,20 +9148,20 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Physical AI",
-   "Simulation",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter",
-   "Rendering",
-   "Digital Twins",
-   "Discover",
    "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Digital Twins",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Simulation",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -9178,15 +9179,15 @@ const EVENTS = [
    "Alexandra Kissel"
   ],
   "tags": [
-   "Physical AI",
-   "Simulation",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter",
+   "Research & Education",
    "Digital Twins",
-   "Robotics"
+   "Physical AI",
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9201,18 +9202,18 @@ const EVENTS = [
   "room": "Petree C",
   "speakers": [],
   "tags": [
-   "Spatial Computing",
-   "Physical AI",
-   "Animation",
-   "Generative AI",
-   "Simulation",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Physical AI",
+   "Simulation",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Discover",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -9229,9 +9230,9 @@ const EVENTS = [
    "Jimmz Zhang"
   ],
   "tags": [
-   "Full Conference",
    "Spatial Computing",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -9247,8 +9248,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -9256,7 +9257,7 @@ const EVENTS = [
   "day": "2026-07-22",
   "s_utc": "2026-07-22T19:20:00Z",
   "e_utc": "2026-07-22T20:20:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess404",
   "ssid": "misc_175",
   "title": "Emerging Technologies Demo - LooseRoPE: Content-aware Attention Manipulation for Semantic Harmonization",
@@ -9266,8 +9267,8 @@ const EVENTS = [
    "Etai Sella"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -9283,8 +9284,8 @@ const EVENTS = [
   "room": "411 Theatre",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -9302,50 +9303,50 @@ const EVENTS = [
    "Fan Feng"
   ],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Networking",
-   "Full Conference",
-   "Chapters",
-   "Pioneers",
-   "Education",
-   "Diversity, Equity and Inclusion",
-   "Physical AI",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Real-Time",
-   "Visual Effects",
-   "Math Foundations and Theory",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Chapters",
    "Computer Vision",
    "Digital Twins",
+   "Display",
+   "Diversity, Equity and Inclusion",
    "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Research & Education",
-   "Augmented Reality",
+   "Education",
    "Ethics and Society",
-   "Industry Insight",
-   "History",
-   "Rendering",
-   "Graphics Systems Architecture",
-   "Lighting",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
+   "Generative AI",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Full Conference Supporter",
+   "History",
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
    "Modeling",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Networking",
+   "Performance",
+   "Physical AI",
+   "Pioneers",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9360,8 +9361,8 @@ const EVENTS = [
   "room": "Hall K Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -9380,48 +9381,48 @@ const EVENTS = [
    "Sunil Rampersad"
   ],
   "tags": [
-   "Full Conference",
+   "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
-   "Research & Education",
-   "Augmented Reality",
+   "Display",
+   "Dynamics",
+   "Education",
    "Ethics and Society",
-   "Graphics Systems Architecture",
-   "Industry Insight",
-   "Rendering",
-   "Haptics",
-   "Experience",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
-   "Modeling",
-   "Image Processing",
-   "Artificial Intelligence/Machine Learning",
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Arts & Design",
-   "Physical AI",
-   "Real-Time",
-   "Math Foundations and Theory",
-   "Dynamics",
-   "Pipeline Tools and Work",
    "Generative AI",
-   "Animation",
-   "Simulation",
    "Geometry",
-   "Lighting",
-   "Virtual Reality",
-   "Scientific Visualization",
-   "Performance",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Robotics"
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9438,11 +9439,11 @@ const EVENTS = [
    "David Thornton"
   ],
   "tags": [
-   "Full Conference",
+   "Research & Education",
+   "Education",
    "Ethics and Society",
    "Full Conference Supporter",
-   "Education",
-   "Research & Education",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -9460,20 +9461,20 @@ const EVENTS = [
    "Markus Tavenrath"
   ],
   "tags": [
-   "Physical AI",
-   "Generative AI",
-   "Simulation",
-   "Real-Time",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
-   "Hardware",
    "New Technologies",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
    "Graphics Systems Architecture",
+   "Hardware",
    "Industry Insight",
-   "Full Conference Supporter",
+   "Physical AI",
+   "Real-Time",
    "Rendering",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9491,10 +9492,10 @@ const EVENTS = [
    "Shoko Kimura"
   ],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Ethics and Society",
    "Full Conference Supporter",
-   "Research & Education",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -9510,17 +9511,17 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Artificial Intelligence/Machine Learning",
-   "Real-Time",
-   "Geometry",
-   "Experience",
-   "Full Conference",
-   "Hardware",
-   "Capture/Scanning",
-   "Graphics Systems Architecture",
-   "Full Conference Supporter",
-   "Rendering",
    "Production & Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Hardware",
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -9542,18 +9543,18 @@ const EVENTS = [
    "Jason Moore"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Animation",
-   "Full Conference",
    "New Technologies",
-   "Virtual Reality",
-   "Art",
-   "Real-Time",
-   "Performance",
-   "Experience",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Animation",
+   "Art",
+   "Performance",
+   "Real-Time",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9568,20 +9569,20 @@ const EVENTS = [
   "room": "Petree C",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Animation",
-   "Full Conference Supporter",
-   "Rendering",
    "Production & Animation",
-   "Discover",
-   "Experience"
+   "Animation",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
   "day": "2026-07-22",
   "s_utc": "2026-07-22T20:30:00Z",
   "e_utc": "2026-07-22T21:30:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess406",
   "ssid": "misc_173",
   "title": "Emerging Technologies Demo - Abstraction in Style: Beyond Texture and Color",
@@ -9591,8 +9592,8 @@ const EVENTS = [
    "Hui Huang"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -9610,17 +9611,17 @@ const EVENTS = [
    "Shannon Woods"
   ],
   "tags": [
-   "Real-Time",
-   "Research & Education",
-   "Performance",
-   "Experience",
-   "Full Conference",
-   "Hardware",
    "New Technologies",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Graphics Systems Architecture",
-   "Full Conference Supporter",
+   "Hardware",
+   "Performance",
+   "Real-Time",
    "Rendering",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9639,15 +9640,15 @@ const EVENTS = [
    "Joan Panis"
   ],
   "tags": [
-   "Pipeline Tools and Work",
    "Gaming & Interactive",
-   "Animation",
-   "Performance",
-   "Experience",
-   "Games",
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Animation",
+   "Games",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9662,19 +9663,19 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Physical AI",
-   "Generative AI",
-   "Simulation",
-   "Real-Time",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Generative AI",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
-   "Discover",
-   "Robotics"
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -9689,15 +9690,15 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Animation",
-   "Simulation",
    "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Rendering",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -9714,12 +9715,12 @@ const EVENTS = [
    "Sunil Rampersad"
   ],
   "tags": [
-   "Full Conference",
    "Arts & Design",
-   "Generative AI",
    "Art",
-   "Full Conference Supporter",
    "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -9737,15 +9738,15 @@ const EVENTS = [
    "Ethan Shaftel"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Virtual Reality",
    "Art",
-   "Real-Time",
-   "Experience",
    "Games",
+   "Real-Time",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
    "Full Conference",
-   "Full Conference Supporter"
+   "Experience"
   ]
  },
  {
@@ -9757,15 +9758,15 @@ const EVENTS = [
   "ssid": "none",
   "title": "Differentiable Geometry Processing & Flow Maps",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess184",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Modeling",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Geometry",
+   "Modeling",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -9780,12 +9781,12 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Generative AI",
-   "Artificial Intelligence/Machine Learning",
-   "Full Conference Supporter",
    "Research & Education",
-   "Lighting"
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Lighting",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -9811,10 +9812,10 @@ const EVENTS = [
    "Yifei Li"
   ],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Generative AI",
    "Full Conference Supporter",
-   "Research & Education"
+   "Full Conference"
   ]
  },
  {
@@ -9829,22 +9830,22 @@ const EVENTS = [
   "room": "411 Theatre",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Image Processing",
-   "Generative AI",
-   "Animation",
-   "Full Conference",
    "Arts & Design",
-   "Rendering",
-   "Computer Vision",
+   "Animation",
    "Art",
-   "Virtual Reality",
-   "Real-Time",
-   "Experience",
+   "Artificial Intelligence/Machine Learning",
    "Capture/Scanning",
-   "Full Conference Supporter",
+   "Computer Vision",
+   "Generative AI",
+   "Image Processing",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9866,16 +9867,16 @@ const EVENTS = [
    "Jasper de Winther"
   ],
   "tags": [
-   "Lighting",
    "Gaming & Interactive",
-   "Real-Time",
-   "Performance",
+   "Artificial Intelligence/Machine Learning",
    "Games",
-   "Full Conference",
    "Hardware",
-   "Full Conference Supporter",
+   "Lighting",
+   "Performance",
+   "Real-Time",
    "Rendering",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -9890,24 +9891,24 @@ const EVENTS = [
   "room": "Room 515 A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
    "New Technologies",
-   "Industry Insight",
-   "Rendering",
-   "Lighting",
-   "Physical AI",
-   "Art",
-   "Scientific Visualization",
-   "Games",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Games",
+   "Generative AI",
+   "Industry Insight",
+   "Lighting",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Rendering",
+   "Scientific Visualization",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -9922,15 +9923,15 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Lighting",
-   "Experience",
-   "Performance",
-   "Full Conference",
    "Production & Animation",
    "Industry Insight",
-   "Full Conference Supporter",
+   "Lighting",
+   "Performance",
+   "Pipeline Tools and Work",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -9949,24 +9950,24 @@ const EVENTS = [
    "Leonard Daly"
   ],
   "tags": [
-   "Generative AI",
    "Gaming & Interactive",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
-   "Digital Twins",
-   "Graphics Systems Architecture",
-   "Industry Insight",
-   "Rendering",
-   "Real-Time",
-   "Scientific Visualization",
-   "Performance",
-   "Experience",
-   "Hardware",
-   "Full Conference Supporter",
    "Production & Animation",
-   "Artificial Intelligence/Machine Learning"
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Digital Twins",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Hardware",
+   "Industry Insight",
+   "Performance",
+   "Real-Time",
+   "Rendering",
+   "Scientific Visualization",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -9981,14 +9982,14 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Lighting",
-   "Real-Time",
    "Research & Education",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
+   "Artificial Intelligence/Machine Learning",
+   "Lighting",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -10007,18 +10008,18 @@ const EVENTS = [
    "Innokentiy Humonen"
   ],
   "tags": [
-   "Image Processing",
-   "Generative AI",
-   "Art",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
    "New Technologies",
-   "Ethics and Society",
+   "Research & Education",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
    "Computer Vision",
+   "Ethics and Society",
+   "Generative AI",
+   "Image Processing",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10036,15 +10037,15 @@ const EVENTS = [
    "Jess Loren"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Experience",
-   "Full Conference",
    "New Technologies",
+   "Production & Animation",
+   "Artificial Intelligence/Machine Learning",
    "Ethics and Society",
    "Industry Insight",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
-   "Production & Animation",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10059,16 +10060,16 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
    "Gaming & Interactive",
-   "Generative AI",
-   "Artificial Intelligence/Machine Learning",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
    "Industry Insight",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -10090,12 +10091,12 @@ const EVENTS = [
   ],
   "tags": [
    "Research & Education",
-   "Experience",
-   "Full Conference",
-   "Ethics and Society",
+   "Diversity, Equity and Inclusion",
    "Education",
+   "Ethics and Society",
    "Full Conference Supporter",
-   "Diversity, Equity and Inclusion"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10110,15 +10111,15 @@ const EVENTS = [
   "room": "Petree C",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Animation",
-   "Artificial Intelligence/Machine Learning",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Pipeline Tools and Work",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -10136,14 +10137,14 @@ const EVENTS = [
    "Yanpei Cao"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
    "Production & Animation",
+   "Research & Education",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -10159,18 +10160,18 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Networking",
-   "Generative AI",
-   "Art",
-   "Animation",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
-   "Diversity, Equity and Inclusion",
+   "New Technologies",
    "Production & Animation",
+   "Animation",
+   "Art",
+   "Diversity, Equity and Inclusion",
+   "Generative AI",
+   "Networking",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -10181,20 +10182,20 @@ const EVENTS = [
   "type": "Industry Sessions",
   "psid": "sess548",
   "ssid": "none",
-  "title": "NVIDIA RTX Rendering Day | Real-Time Short Form Content: Behind The Scenes of the ILM Minis",
+  "title": "NVIDIA RTX Rendering Day | Real-Time Stylized Workflows: GPU Accelerated Creativity at ILM",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=15&id=ind_127&sess=sess548",
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Animation",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "Production & Animation",
+   "Animation",
    "Industry Insight",
-   "Full Conference Supporter",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -10212,13 +10213,13 @@ const EVENTS = [
    "Zelia ZZ Tan"
   ],
   "tags": [
-   "Spatial Computing",
-   "Performance",
-   "Experience",
-   "Full Conference",
    "New Technologies",
+   "Performance",
+   "Rendering",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Rendering"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10238,28 +10239,28 @@ const EVENTS = [
    "Tuna Bora"
   ],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Full Conference",
    "Arts & Design",
    "New Technologies",
-   "Education",
-   "Art",
-   "Real-Time",
-   "Computer Vision",
-   "Generative AI",
    "Animation",
-   "Simulation",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Rendering",
-   "Virtual Reality",
-   "Performance",
-   "Experience",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
    "Audio",
+   "Augmented Reality",
+   "Computer Vision",
+   "Display",
+   "Education",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Image Processing",
+   "Performance",
+   "Real-Time",
+   "Rendering",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10276,19 +10277,19 @@ const EVENTS = [
    "Eric Pinkel"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Real-Time",
-   "Visual Effects",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Capture/Scanning",
    "Production & Animation",
+   "Capture/Scanning",
+   "Digital Twins",
+   "Generative AI",
    "Industry Insight",
-   "Full Conference Supporter",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
-   "Digital Twins"
+   "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10305,8 +10306,8 @@ const EVENTS = [
    "Duane Rutkowski"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -10322,18 +10323,18 @@ const EVENTS = [
   "room": "Room 502B",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Physical AI",
-   "Generative AI",
-   "Simulation",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "New Technologies",
-   "Full Conference Supporter",
+   "Generative AI",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
-   "Discover",
-   "Robotics"
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -10353,18 +10354,18 @@ const EVENTS = [
    "Steve Winston"
   ],
   "tags": [
-   "Real-Time",
-   "Research & Education",
-   "Performance",
-   "Experience",
-   "Full Conference",
-   "Hardware",
    "New Technologies",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Graphics Systems Architecture",
+   "Hardware",
    "Industry Insight",
-   "Full Conference Supporter",
+   "Performance",
+   "Real-Time",
    "Rendering",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10381,18 +10382,18 @@ const EVENTS = [
    "Junfan Zhu"
   ],
   "tags": [
-   "Spatial Computing",
+   "New Technologies",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
+   "Computer Vision",
    "Generative AI",
    "Physical AI",
+   "Robotics",
    "Simulation",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Computer Vision",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10407,25 +10408,25 @@ const EVENTS = [
   "room": "Room 501 ABC",
   "speakers": [],
   "tags": [
-   "Spatial Computing",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Art",
-   "Virtual Reality",
-   "Real-Time",
-   "Experience",
-   "Games",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Augmented Reality",
+   "Digital Twins",
+   "Education",
+   "Games",
+   "Generative AI",
+   "Real-Time",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Digital Twins"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10440,28 +10441,28 @@ const EVENTS = [
   "room": "411 Theatre",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Image Processing",
-   "Display",
-   "Generative AI",
-   "Geometry",
-   "Full Conference",
    "Arts & Design",
    "New Technologies",
-   "Education",
-   "Computer Vision",
-   "Art",
-   "Real-Time",
-   "Experience",
-   "Performance",
-   "Fabrication",
-   "Hardware",
    "Production & Animation",
-   "Full Conference Supporter",
-   "Modeling",
-   "Math Foundations and Theory",
+   "Art",
    "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Computer Vision",
+   "Display",
+   "Education",
+   "Fabrication",
+   "Generative AI",
+   "Geometry",
+   "Hardware",
+   "Image Processing",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Robotics",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10473,18 +10474,18 @@ const EVENTS = [
   "ssid": "none",
   "title": "Numerical Methods for Geometry Processing",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess115",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Animation",
-   "Simulation",
    "Research & Education",
-   "Geometry",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Fabrication",
-   "Full Conference",
-   "Full Conference Supporter",
+   "Geometry",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -10499,15 +10500,15 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Virtual Reality",
-   "Simulation",
-   "Animation",
    "Research & Education",
-   "Full Conference",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Augmented Reality",
-   "Full Conference Supporter",
    "Rendering",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -10522,15 +10523,15 @@ const EVENTS = [
   "room": "Room 515 A",
   "speakers": [],
   "tags": [
-   "Animation",
-   "Research & Education",
-   "Performance",
-   "Full Conference",
-   "Audio",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
    "Computer Vision",
-   "Artificial Intelligence/Machine Learning"
+   "Performance",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -10545,14 +10546,14 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Animation",
-   "Virtual Reality",
-   "Simulation",
-   "Haptics",
    "Research & Education",
+   "Animation",
    "Fabrication",
-   "Full Conference",
-   "Full Conference Supporter"
+   "Haptics",
+   "Simulation",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -10567,20 +10568,20 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
+   "Research & Education",
    "Geometry",
-   "Full Conference",
+   "Modeling",
+   "Rendering",
    "Simulation",
    "Full Conference Supporter",
-   "Rendering",
-   "Modeling",
-   "Research & Education"
+   "Full Conference"
   ]
  },
  {
   "day": "2026-07-22",
   "s_utc": "2026-07-22T22:50:00Z",
   "e_utc": "2026-07-22T23:50:00Z",
-  "type": "Technical Papers",
+  "type": "Emerging Technologies",
   "psid": "sess401",
   "ssid": "misc_178",
   "title": "Emerging Technologies Demo - A Generalizable Light Transport 3D Embedding for Global Illumination",
@@ -10590,8 +10591,8 @@ const EVENTS = [
    "Bing Xu"
   ],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -10609,9 +10610,9 @@ const EVENTS = [
    "Jimmz Zhang"
   ],
   "tags": [
-   "Full Conference",
    "Spatial Computing",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -10627,23 +10628,23 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Gaming & Interactive",
-   "Generative AI",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Industry Insight",
-   "Artificial Intelligence/Machine Learning",
-   "Computer Vision",
-   "Discover",
-   "Art",
-   "Experience",
-   "Games",
-   "Audio",
    "Production & Animation",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Computer Vision",
+   "Games",
+   "Generative AI",
+   "Image Processing",
+   "Industry Insight",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
-   "Image Processing"
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -10658,15 +10659,15 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Animation",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
-   "Graphics Systems Architecture",
-   "Full Conference Supporter",
-   "Rendering",
    "Production & Animation",
+   "Animation",
+   "Graphics Systems Architecture",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -10686,16 +10687,16 @@ const EVENTS = [
    "Rebecca Forth"
   ],
   "tags": [
-   "Animation",
-   "Virtual Reality",
-   "Real-Time",
-   "Performance",
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
-   "Rendering",
+   "Animation",
+   "Lighting",
    "Modeling",
-   "Lighting"
+   "Performance",
+   "Real-Time",
+   "Rendering",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -10710,15 +10711,15 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Display",
-   "Artificial Intelligence/Machine Learning",
-   "Real-Time",
-   "Experience",
-   "Performance",
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Artificial Intelligence/Machine Learning",
+   "Display",
+   "Performance",
+   "Real-Time",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -10739,16 +10740,16 @@ const EVENTS = [
    "Steve Winston"
   ],
   "tags": [
-   "Real-Time",
-   "Research & Education",
-   "Experience",
-   "Performance",
-   "Full Conference",
    "New Technologies",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Graphics Systems Architecture",
    "Industry Insight",
+   "Performance",
+   "Real-Time",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10763,38 +10764,38 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
-   "Education",
-   "Physical AI",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Real-Time",
-   "Math Foundations and Theory",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
    "Computer Vision",
    "Digital Twins",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Research & Education",
-   "Augmented Reality",
+   "Education",
    "Ethics and Society",
-   "Virtual Reality",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
    "Games",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
+   "Generative AI",
+   "Geometry",
+   "Image Processing",
+   "Math Foundations and Theory",
    "Modeling",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10811,54 +10812,54 @@ const EVENTS = [
    "Yosun Chang"
   ],
   "tags": [
-   "Image Processing",
-   "Spatial Computing",
-   "Display",
-   "Networking",
-   "Gaming & Interactive",
-   "Full Conference",
-   "Chapters",
-   "New Technologies",
    "Arts & Design",
-   "Pioneers",
-   "Education",
-   "Diversity, Equity and Inclusion",
-   "Physical AI",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Real-Time",
-   "Visual Effects",
-   "Hardware",
-   "Math Foundations and Theory",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
+   "Chapters",
    "Computer Vision",
    "Digital Twins",
+   "Display",
+   "Diversity, Equity and Inclusion",
    "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Research & Education",
-   "Augmented Reality",
+   "Education",
    "Ethics and Society",
-   "Industry Insight",
-   "History",
-   "Rendering",
-   "Graphics Systems Architecture",
-   "Lighting",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Performance",
    "Fabrication",
    "Games",
-   "Experience",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
+   "Generative AI",
+   "Geometry",
+   "Graphics Systems Architecture",
+   "Haptics",
+   "Hardware",
+   "History",
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
    "Modeling",
-   "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Networking",
+   "Performance",
+   "Physical AI",
+   "Pioneers",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10873,8 +10874,8 @@ const EVENTS = [
   "room": "Hall K Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -10891,10 +10892,10 @@ const EVENTS = [
    "Lisie Aartsen"
   ],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Industry Insight",
    "Full Conference Supporter",
-   "Research & Education",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -10925,11 +10926,11 @@ const EVENTS = [
    "Thalia Archibald"
   ],
   "tags": [
-   "Full Conference",
-   "Experience",
-   "Education",
    "Research & Education",
-   "Full Conference Supporter"
+   "Education",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10948,18 +10949,18 @@ const EVENTS = [
    "Shanna Alcide"
   ],
   "tags": [
-   "Networking",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Production & Animation",
+   "Research & Education",
+   "Diversity, Equity and Inclusion",
    "Ethics and Society",
    "Industry Insight",
+   "Networking",
    "Full Conference Supporter",
-   "Production & Animation",
-   "Diversity, Equity and Inclusion"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -10974,16 +10975,16 @@ const EVENTS = [
   "room": "Room 515 A",
   "speakers": [],
   "tags": [
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
+   "Animation",
+   "Dynamics",
+   "Geometry",
    "Industry Insight",
-   "Full Conference Supporter",
    "Modeling",
-   "Dynamics"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -11009,17 +11010,17 @@ const EVENTS = [
    "Rafał Mantiuk"
   ],
   "tags": [
-   "Spatial Computing",
-   "Display",
    "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
-   "Artificial Intelligence/Machine Learning",
-   "Full Conference Supporter",
    "Art",
-   "Virtual Reality",
+   "Artificial Intelligence/Machine Learning",
+   "Augmented Reality",
    "Computer Vision",
-   "Image Processing"
+   "Display",
+   "Image Processing",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -11041,29 +11042,29 @@ const EVENTS = [
    "Heather Culbertson"
   ],
   "tags": [
-   "Spatial Computing",
-   "Display",
-   "Networking",
-   "Gaming & Interactive",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Physical AI",
-   "Art",
-   "Real-Time",
-   "Hardware",
-   "Digital Twins",
-   "Animation",
-   "Geometry",
+   "Production & Animation",
    "Research & Education",
+   "Animation",
+   "Art",
+   "Digital Twins",
+   "Display",
+   "Geometry",
    "Graphics Systems Architecture",
    "Haptics",
-   "Scientific Visualization",
+   "Hardware",
+   "Networking",
    "Performance",
-   "Experience",
-   "Production & Animation",
+   "Physical AI",
+   "Real-Time",
+   "Robotics",
+   "Scientific Visualization",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Robotics"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11081,15 +11082,15 @@ const EVENTS = [
    "Tamarat Belayneh"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Scientific Visualization",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "New Technologies",
+   "Research & Education",
    "Graphics Systems Architecture",
-   "Full Conference Supporter"
+   "Pipeline Tools and Work",
+   "Scientific Visualization",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11111,22 +11112,22 @@ const EVENTS = [
    "Craig Slagel"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Gaming & Interactive",
-   "Animation",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
-   "Education",
-   "Lighting",
-   "Art",
-   "Real-Time",
-   "Performance",
-   "Experience",
-   "Games",
+   "Gaming & Interactive",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Art",
+   "Education",
+   "Games",
+   "Lighting",
+   "Modeling",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Full Conference Supporter",
-   "Modeling"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11141,12 +11142,12 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
-   "Modeling",
    "Research & Education",
-   "Lighting"
+   "Lighting",
+   "Modeling",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -11161,14 +11162,14 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Generative AI",
    "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Fabrication",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
+   "Generative AI",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -11183,16 +11184,16 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
+   "Production & Animation",
    "Animation",
    "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Pipeline Tools and Work",
    "Real-Time",
-   "Experience",
-   "Full Conference",
-   "Production & Animation",
-   "Full Conference Supporter",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -11212,13 +11213,13 @@ const EVENTS = [
    "Ingo Wald"
   ],
   "tags": [
-   "Scientific Visualization",
+   "Production & Animation",
    "Research & Education",
    "Performance",
-   "Full Conference",
-   "Production & Animation",
+   "Rendering",
+   "Scientific Visualization",
    "Full Conference Supporter",
-   "Rendering"
+   "Full Conference"
   ]
  },
  {
@@ -11233,8 +11234,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -11250,8 +11251,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -11267,8 +11268,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -11284,8 +11285,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -11301,8 +11302,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -11318,8 +11319,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -11335,8 +11336,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -11352,8 +11353,8 @@ const EVENTS = [
   "room": "West Hall Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -11369,14 +11370,14 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Animation",
-   "Simulation",
    "Research & Education",
+   "Animation",
    "Geometry",
-   "Full Conference",
    "Hardware",
+   "Modeling",
+   "Simulation",
    "Full Conference Supporter",
-   "Modeling"
+   "Full Conference"
   ]
  },
  {
@@ -11388,16 +11389,16 @@ const EVENTS = [
   "ssid": "none",
   "title": "Quads & Singularities",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess185",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Modeling",
    "Research & Education",
    "Artificial Intelligence/Machine Learning",
-   "Fabrication"
+   "Fabrication",
+   "Geometry",
+   "Modeling",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -11416,8 +11417,8 @@ const EVENTS = [
   ],
   "tags": [
    "Production & Animation",
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -11432,14 +11433,14 @@ const EVENTS = [
   "room": "Concourse Foyer",
   "speakers": [],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
+   "Gaming & Interactive",
+   "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11454,38 +11455,38 @@ const EVENTS = [
   "room": "Concourse Hall",
   "speakers": [],
   "tags": [
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Physical AI",
+   "Research & Education",
    "Art",
-   "Real-Time",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
+   "Display",
    "Dynamics",
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Research & Education",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Virtual Reality",
-   "Haptics",
-   "Scientific Visualization",
-   "Experience",
-   "Performance",
+   "Education",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Full Conference Supporter",
    "Image Processing",
-   "Robotics"
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Robotics",
+   "Scientific Visualization",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11500,14 +11501,14 @@ const EVENTS = [
   "room": "West Hall A",
   "speakers": [],
   "tags": [
-   "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
    "Production & Animation",
+   "Research & Education",
    "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -11523,35 +11524,35 @@ const EVENTS = [
   "room": "Concourse Hall",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Generative AI",
-   "Animation",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
-   "New Technologies",
    "Arts & Design",
-   "Ethics and Society",
-   "Education",
-   "Artificial Intelligence/Machine Learning",
-   "Computer Vision",
-   "Virtual Reality",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Haptics",
-   "Scientific Visualization",
-   "Real-Time",
-   "Experience",
-   "Performance",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Computer Vision",
+   "Digital Twins",
+   "Education",
+   "Ethics and Society",
    "Fabrication",
    "Games",
-   "Audio",
+   "Generative AI",
+   "Haptics",
    "Hardware",
+   "Image Processing",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Digital Twins",
-   "Image Processing"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11568,16 +11569,16 @@ const EVENTS = [
    "Keith Hibbert"
   ],
   "tags": [
-   "Animation",
-   "Simulation",
-   "Art",
-   "Virtual Reality",
    "Research & Education",
-   "Experience",
+   "Animation",
+   "Art",
+   "Education",
    "Games",
-   "Full Conference",
+   "Simulation",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Education"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11592,16 +11593,16 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
+   "Production & Animation",
    "Animation",
    "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Pipeline Tools and Work",
    "Real-Time",
-   "Experience",
-   "Full Conference",
-   "Production & Animation",
-   "Full Conference Supporter",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -11622,14 +11623,14 @@ const EVENTS = [
    "Stanislas Mako"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Performance",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
    "Industry Insight",
-   "Full Conference Supporter"
+   "Performance",
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11647,19 +11648,19 @@ const EVENTS = [
    "Jesse Fleming"
   ],
   "tags": [
-   "Spatial Computing",
-   "Generative AI",
-   "Full Conference",
    "Arts & Design",
    "New Technologies",
-   "Physical AI",
    "Art",
-   "Real-Time",
-   "Performance",
-   "Experience",
-   "Full Conference Supporter",
    "Artificial Intelligence/Machine Learning",
-   "Robotics"
+   "Generative AI",
+   "Performance",
+   "Physical AI",
+   "Real-Time",
+   "Robotics",
+   "Spatial Computing",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11678,26 +11679,26 @@ const EVENTS = [
    "Maria Shugrina"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Animation",
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Physical AI",
-   "Experience",
-   "Capture/Scanning",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Capture/Scanning",
+   "Physical AI",
+   "Simulation",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
   "day": "2026-07-23",
   "s_utc": "2026-07-23T17:30:00Z",
   "e_utc": "2026-07-23T18:30:00Z",
-  "type": "Art Gallery",
+  "type": "ACM SIGGRAPH 365",
   "psid": "sess284",
   "ssid": "thea_112",
   "title": "ACM SIGGRAPH Digital Arts Community Roundtables",
@@ -11714,13 +11715,13 @@ const EVENTS = [
    "Vernelle A. A. Noel"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Art",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
-   "Full Conference Supporter"
+   "Gaming & Interactive",
+   "Research & Education",
+   "Art",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11739,12 +11740,12 @@ const EVENTS = [
    "Rizu Jain"
   ],
   "tags": [
-   "Full Conference",
-   "Performance",
+   "Research & Education",
    "Hardware",
    "Industry Insight",
+   "Performance",
    "Full Conference Supporter",
-   "Research & Education",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -11760,14 +11761,14 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Simulation",
    "Research & Education",
-   "Geometry",
    "Fabrication",
-   "Full Conference",
-   "Full Conference Supporter",
+   "Geometry",
    "Modeling",
-   "Robotics"
+   "Robotics",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -11782,13 +11783,13 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
+   "Research & Education",
    "Geometry",
-   "Full Conference",
-   "Real-Time",
-   "Full Conference Supporter",
-   "Rendering",
    "Modeling",
-   "Research & Education"
+   "Real-Time",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -11803,13 +11804,13 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
+   "Artificial Intelligence/Machine Learning",
    "Augmented Reality",
    "Generative AI",
    "Virtual Reality",
    "Full Conference Supporter",
-   "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -11824,24 +11825,24 @@ const EVENTS = [
   "room": "Room 515 A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Animation",
-   "Simulation",
-   "Geometry",
-   "Research & Education",
-   "Full Conference",
-   "Augmented Reality",
    "Arts & Design",
-   "Rendering",
-   "Lighting",
-   "Virtual Reality",
-   "Real-Time",
-   "Games",
    "Production & Animation",
-   "Full Conference Supporter",
-   "Modeling",
+   "Research & Education",
+   "Animation",
+   "Augmented Reality",
+   "Dynamics",
+   "Games",
+   "Geometry",
+   "Lighting",
    "Math Foundations and Theory",
-   "Dynamics"
+   "Modeling",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Simulation",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -11853,16 +11854,16 @@ const EVENTS = [
   "ssid": "none",
   "title": "Simulation",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess103",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
+   "Research & Education",
    "Animation",
+   "Geometry",
+   "Modeling",
    "Simulation",
    "Full Conference Supporter",
-   "Modeling",
-   "Research & Education"
+   "Full Conference"
   ]
  },
  {
@@ -11877,8 +11878,8 @@ const EVENTS = [
   "room": "Petree D Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -11895,15 +11896,15 @@ const EVENTS = [
    "Kathleen Ruffalo"
   ],
   "tags": [
-   "Animation",
-   "Research & Education",
-   "Experience",
-   "Visual Effects",
-   "Full Conference",
    "Arts & Design",
    "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Industry Insight",
-   "Full Conference Supporter"
+   "Visual Effects",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11921,22 +11922,22 @@ const EVENTS = [
    "Glenn Goldman"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Gaming & Interactive",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Graphics Systems Architecture",
-   "Ethics and Society",
-   "Industry Insight",
-   "Art",
-   "Experience",
-   "Games",
    "Production & Animation",
+   "Research & Education",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Ethics and Society",
+   "Games",
+   "Generative AI",
+   "Graphics Systems Architecture",
+   "Industry Insight",
+   "Pipeline Tools and Work",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -11951,17 +11952,17 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
-   "Discover",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -11980,15 +11981,15 @@ const EVENTS = [
    "Cassidy Curtis"
   ],
   "tags": [
-   "Generative AI",
-   "Animation",
-   "Full Conference",
    "Arts & Design",
    "New Technologies",
-   "Art",
    "Production & Animation",
+   "Animation",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -12005,18 +12006,18 @@ const EVENTS = [
    "Emre Tanirgan"
   ],
   "tags": [
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Simulation",
-   "Full Conference",
-   "Augmented Reality",
    "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Virtual Reality",
-   "Real-Time",
-   "Experience",
+   "Augmented Reality",
    "Games",
-   "Full Conference Supporter"
+   "Real-Time",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12033,16 +12034,16 @@ const EVENTS = [
    "Zoë LaLena"
   ],
   "tags": [
-   "Simulation",
-   "Research & Education",
-   "Full Conference",
    "New Technologies",
-   "Physical AI",
-   "Experience",
+   "Research & Education",
    "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
-   "Full Conference Supporter"
+   "Physical AI",
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12062,18 +12063,18 @@ const EVENTS = [
    "Randi Matushevitz"
   ],
   "tags": [
-   "Image Processing",
-   "Gaming & Interactive",
-   "Animation",
-   "Virtual Reality",
-   "Art",
-   "Scientific Visualization",
-   "Experience",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
+   "Gaming & Interactive",
+   "New Technologies",
+   "Animation",
+   "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Image Processing",
+   "Scientific Visualization",
+   "Virtual Reality",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12088,8 +12089,8 @@ const EVENTS = [
   "room": "Petree D Lobby",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12104,8 +12105,8 @@ const EVENTS = [
   "room": "411 Theatre",
   "speakers": [],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12120,8 +12121,8 @@ const EVENTS = [
   "room": "Room 409 AB",
   "speakers": [],
   "tags": [
-   "Full Conference",
    "Full Conference Supporter",
+   "Full Conference",
    "Experience"
   ]
  },
@@ -12137,9 +12138,9 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Full Conference Supporter",
-   "Research & Education"
+   "Full Conference"
   ]
  },
  {
@@ -12163,48 +12164,48 @@ const EVENTS = [
    "Lillian Aulls"
   ],
   "tags": [
-   "Full Conference",
+   "Arts & Design",
+   "Gaming & Interactive",
    "New Technologies",
-   "Education",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
    "Art",
+   "Artificial Intelligence/Machine Learning",
+   "Audio",
+   "Augmented Reality",
+   "Capture/Scanning",
    "Computer Vision",
    "Digital Twins",
-   "Research & Education",
-   "Augmented Reality",
-   "Graphics Systems Architecture",
-   "Industry Insight",
+   "Display",
+   "Dynamics",
+   "Education",
    "Ethics and Society",
-   "Rendering",
-   "Haptics",
-   "Experience",
    "Fabrication",
    "Games",
-   "Capture/Scanning",
-   "Audio",
-   "Production & Animation",
-   "Full Conference Supporter",
-   "Modeling",
-   "Image Processing",
-   "Artificial Intelligence/Machine Learning",
-   "Spatial Computing",
-   "Display",
-   "Gaming & Interactive",
-   "Arts & Design",
-   "Physical AI",
-   "Real-Time",
-   "Math Foundations and Theory",
-   "Dynamics",
-   "Pipeline Tools and Work",
    "Generative AI",
-   "Animation",
-   "Simulation",
    "Geometry",
-   "Lighting",
-   "Virtual Reality",
-   "Scientific Visualization",
-   "Performance",
+   "Graphics Systems Architecture",
+   "Haptics",
    "Hardware",
-   "Robotics"
+   "Image Processing",
+   "Industry Insight",
+   "Lighting",
+   "Math Foundations and Theory",
+   "Modeling",
+   "Performance",
+   "Physical AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
+   "Rendering",
+   "Robotics",
+   "Scientific Visualization",
+   "Simulation",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12219,17 +12220,17 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Artificial Intelligence/Machine Learning",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
    "Discover"
   ]
  },
@@ -12247,15 +12248,15 @@ const EVENTS = [
    "Jiaxuan Yin"
   ],
   "tags": [
-   "Spatial Computing",
-   "Gaming & Interactive",
-   "Virtual Reality",
-   "Haptics",
-   "Experience",
-   "Games",
-   "Full Conference",
    "Arts & Design",
-   "Full Conference Supporter"
+   "Gaming & Interactive",
+   "Games",
+   "Haptics",
+   "Spatial Computing",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12272,18 +12273,18 @@ const EVENTS = [
    "isa gordon"
   ],
   "tags": [
-   "Animation",
-   "Virtual Reality",
-   "Art",
-   "Research & Education",
-   "Performance",
-   "Experience",
-   "Full Conference",
    "Arts & Design",
-   "Ethics and Society",
-   "Full Conference Supporter",
+   "Production & Animation",
+   "Research & Education",
+   "Animation",
+   "Art",
    "Education",
-   "Production & Animation"
+   "Ethics and Society",
+   "Performance",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12298,13 +12299,13 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
-   "Rendering",
-   "Modeling",
    "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Artificial Intelligence/Machine Learning",
+   "Geometry",
+   "Modeling",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12323,17 +12324,17 @@ const EVENTS = [
    "Ticha Sethapakdi"
   ],
   "tags": [
-   "Display",
-   "Animation",
-   "Research & Education",
-   "Full Conference",
-   "New Technologies",
    "Arts & Design",
+   "New Technologies",
+   "Research & Education",
+   "Animation",
    "Art",
-   "Experience",
+   "Display",
    "Fabrication",
+   "Image Processing",
    "Full Conference Supporter",
-   "Image Processing"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12345,17 +12346,17 @@ const EVENTS = [
   "ssid": "none",
   "title": "Garments",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess117",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
-   "Animation",
-   "Simulation",
    "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12370,13 +12371,13 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Display",
    "Generative AI",
    "Hardware",
+   "Image Processing",
    "Full Conference Supporter",
-   "Research & Education",
-   "Image Processing"
+   "Full Conference"
   ]
  },
  {
@@ -12391,13 +12392,13 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Modeling",
    "Simulation",
    "Full Conference Supporter",
-   "Modeling",
-   "Research & Education",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -12412,18 +12413,18 @@ const EVENTS = [
   "room": "Room 502A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Generative AI",
-   "Animation",
-   "Real-Time",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Generative AI",
+   "Pipeline Tools and Work",
+   "Real-Time",
    "Rendering",
-   "Discover",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience",
+   "Discover"
   ]
  },
  {
@@ -12442,13 +12443,13 @@ const EVENTS = [
   ],
   "tags": [
    "Gaming & Interactive",
-   "Scientific Visualization",
+   "Production & Animation",
    "Research & Education",
-   "Full Conference",
    "Graphics Systems Architecture",
-   "Full Conference Supporter",
    "Rendering",
-   "Production & Animation"
+   "Scientific Visualization",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12470,18 +12471,18 @@ const EVENTS = [
    "Paul Ritaldato"
   ],
   "tags": [
-   "Display",
    "Gaming & Interactive",
    "Research & Education",
-   "Full Conference",
-   "Graphics Systems Architecture",
-   "Rendering",
-   "Real-Time",
-   "Performance",
+   "Artificial Intelligence/Machine Learning",
+   "Display",
    "Games",
+   "Graphics Systems Architecture",
    "Hardware",
+   "Performance",
+   "Real-Time",
+   "Rendering",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -12500,14 +12501,14 @@ const EVENTS = [
    "Jernej Barbič"
   ],
   "tags": [
-   "Gaming & Interactive",
-   "Animation",
-   "Dynamics",
-   "Research & Education",
-   "Full Conference",
    "Arts & Design",
+   "Gaming & Interactive",
+   "Research & Education",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Dynamics",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference"
   ]
  },
  {
@@ -12524,8 +12525,8 @@ const EVENTS = [
    "Michael Gold"
   ],
   "tags": [
-   "Full Conference",
-   "Full Conference Supporter"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12542,13 +12543,13 @@ const EVENTS = [
    "Albert Barque-Duran"
   ],
   "tags": [
-   "Spatial Computing",
    "Gaming & Interactive",
-   "Experience",
-   "Full Conference",
+   "Artificial Intelligence/Machine Learning",
    "Ethics and Society",
+   "Spatial Computing",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12566,14 +12567,14 @@ const EVENTS = [
    "Ryan Bottriell"
   ],
   "tags": [
-   "Pipeline Tools and Work",
    "Gaming & Interactive",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
-   "Full Conference Supporter"
+   "Research & Education",
+   "Pipeline Tools and Work",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12590,18 +12591,18 @@ const EVENTS = [
    "Benjamin Lock"
   ],
   "tags": [
-   "Pipeline Tools and Work",
    "Gaming & Interactive",
-   "Generative AI",
-   "Simulation",
-   "Visual Effects",
-   "Experience",
-   "Games",
-   "Full Conference",
    "New Technologies",
    "Production & Animation",
+   "Artificial Intelligence/Machine Learning",
+   "Games",
+   "Generative AI",
+   "Pipeline Tools and Work",
+   "Simulation",
+   "Visual Effects",
    "Full Conference Supporter",
-   "Artificial Intelligence/Machine Learning"
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12621,20 +12622,20 @@ const EVENTS = [
    "Stephanie Becker"
   ],
   "tags": [
-   "Pipeline Tools and Work",
-   "Gaming & Interactive",
-   "Virtual Reality",
-   "Art",
-   "Research & Education",
-   "Experience",
-   "Full Conference",
-   "Augmented Reality",
    "Arts & Design",
+   "Gaming & Interactive",
+   "Research & Education",
+   "Art",
+   "Augmented Reality",
    "Capture/Scanning",
-   "Hardware",
-   "Education",
    "Digital Twins",
-   "Full Conference Supporter"
+   "Education",
+   "Hardware",
+   "Pipeline Tools and Work",
+   "Virtual Reality",
+   "Full Conference Supporter",
+   "Full Conference",
+   "Experience"
   ]
  },
  {
@@ -12651,18 +12652,18 @@ const EVENTS = [
    "Andrew Glassner"
   ],
   "tags": [
-   "Research & Education",
-   "Full Conference",
-   "Education",
-   "Rendering",
-   "Full Conference Supporter",
-   "Scientific Visualization",
-   "Audio",
    "Production & Animation",
+   "Research & Education",
+   "Audio",
    "Computer Vision",
-   "Modeling",
+   "Education",
+   "Image Processing",
    "Math Foundations and Theory",
-   "Image Processing"
+   "Modeling",
+   "Rendering",
+   "Scientific Visualization",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12677,13 +12678,13 @@ const EVENTS = [
   "room": "Room 408 B",
   "speakers": [],
   "tags": [
-   "Geometry",
-   "Full Conference",
+   "Research & Education",
    "Generative AI",
-   "Full Conference Supporter",
-   "Rendering",
+   "Geometry",
    "Modeling",
-   "Research & Education"
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12695,14 +12696,14 @@ const EVENTS = [
   "ssid": "none",
   "title": "Mapping, Untangling & Summarizing Surfaces",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=16&sess=sess129",
-  "room": "Room 403  B",
+  "room": "Room 403 B",
   "speakers": [],
   "tags": [
+   "Research & Education",
    "Geometry",
-   "Full Conference",
-   "Full Conference Supporter",
    "Modeling",
-   "Research & Education"
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12717,16 +12718,16 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Generative AI",
-   "Animation",
-   "Simulation",
    "Research & Education",
-   "Geometry",
+   "Animation",
+   "Artificial Intelligence/Machine Learning",
    "Games",
-   "Full Conference",
-   "Full Conference Supporter",
+   "Generative AI",
+   "Geometry",
    "Modeling",
-   "Artificial Intelligence/Machine Learning"
+   "Simulation",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12741,18 +12742,18 @@ const EVENTS = [
   "room": "Room 408 A",
   "speakers": [],
   "tags": [
-   "Pipeline Tools and Work",
-   "Image Processing",
+   "Production & Animation",
    "Animation",
    "Artificial Intelligence/Machine Learning",
-   "Performance",
-   "Production & Animation",
-   "Full Conference",
-   "Graphics Systems Architecture",
-   "Full Conference Supporter",
-   "Rendering",
    "Computer Vision",
-   "Lighting"
+   "Graphics Systems Architecture",
+   "Image Processing",
+   "Lighting",
+   "Performance",
+   "Pipeline Tools and Work",
+   "Rendering",
+   "Full Conference Supporter",
+   "Full Conference"
   ]
  },
  {
@@ -12767,9 +12768,9 @@ const EVENTS = [
   "room": "Room 403 A",
   "speakers": [],
   "tags": [
-   "Full Conference",
+   "Research & Education",
    "Full Conference Supporter",
-   "Research & Education"
+   "Full Conference"
   ]
  }
 ];

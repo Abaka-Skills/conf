@@ -1,0 +1,26 @@
+name: Pull from official
+# Manual button: Actions tab -> "Pull from official" -> Run workflow.
+# Re-scrapes s2026.conference-schedule.org and commits the updated data.js if it changed.
+on:
+  workflow_dispatch:
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerate data.js from official site
+        run: node siggraph26/tools/pull_official.mjs
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add siggraph26/assets/data.js
+          if git diff --cached --quiet; then
+            echo "No changes — official schedule unchanged."
+          else
+            git commit -m "Pull schedule from official site ($(date -u +%F))"
+            git push
+          fi
