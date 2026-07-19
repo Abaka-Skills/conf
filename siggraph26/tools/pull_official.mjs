@@ -11,7 +11,20 @@ import { fileURLToPath } from 'node:url';
 const BASE = 'https://s2026.conference-schedule.org';
 const DAYS = ['2026-07-19', '2026-07-20', '2026-07-21', '2026-07-22', '2026-07-23'];
 const OUT = join(dirname(fileURLToPath(import.meta.url)), '..', 'assets', 'data.js');
-const UA = { headers: { 'User-Agent': 'Mozilla/5.0' } };
+const UA = { headers: {
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'Accept-Language': 'en-US,en;q=0.9',
+} };
+
+// Used when the schedule homepage (source of the live type filter) is
+// unreachable — e.g. its WAF 415s requests from CI/datacenter IPs.
+const FALLBACK_TYPE_NAMES = ['ACM SIGGRAPH 365', 'ACM SIGGRAPH Award Talks', 'Appy Hour',
+  'Art Gallery', 'Art Papers', 'Birds of a Feather', 'Computer Animation Festival', 'Courses',
+  "Educator's Day Sessions", "Educator's Forum", 'Emerging Technologies', 'Exhibition',
+  'Frontiers', 'Games Summit', 'Immersive Pavilion', 'Industry Sessions', 'Keynote Speakers',
+  'Panels', 'Pathfinders', 'Posters', 'Production Sessions', 'Real-Time Live!',
+  'Spatial Storytelling', 'Stage Sessions', 'Talks', 'Technical Papers', 'Technical Workshops'];
 
 const decode = s => s
   .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n))
@@ -30,12 +43,17 @@ async function fetchText(url) {
 // type filter. Rows only carry singular labels ("Technical Paper"); the filter
 // has the canonical plural ones the app's colors are keyed on.
 async function fetchTypeMap() {
-  const html = await fetchText(BASE + '/');
-  const sel = html.match(/name=.etype_filt.(.*?)<\/select>/s);
-  if (!sel) throw new Error('etype_filt select not found on schedule page');
-  return Object.fromEntries(
-    [...sel[1].matchAll(/<option value="((?:evtt|sstype)\d+)">(.*?)<\/option>/g)]
-      .map(m => [m[1], decode(m[2])]));
+  try {
+    const html = await fetchText(BASE + '/');
+    const sel = html.match(/name=.etype_filt.(.*?)<\/select>/s);
+    if (!sel) throw new Error('etype_filt select not found on schedule page');
+    return Object.fromEntries(
+      [...sel[1].matchAll(/<option value="((?:evtt|sstype)\d+)">(.*?)<\/option>/g)]
+        .map(m => [m[1], decode(m[2])]));
+  } catch (e) {
+    console.warn(`type filter fetch failed (${e.message}); using built-in type names`);
+    return Object.fromEntries(FALLBACK_TYPE_NAMES.map((n, i) => ['fallback' + i, n]));
+  }
 }
 
 function parseDay(html, day, typeMap) {
