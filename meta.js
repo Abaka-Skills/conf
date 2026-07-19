@@ -10,7 +10,7 @@ window.CONFERENCES = [
   "end": "2026-07-23",
   "location": "Los Angeles Convention Center · Los Angeles, CA, USA",
   "official": "https://s2026.siggraph.org/",
-  "schedule": "siggraph/",
+  "schedule": "siggraph26/",
   "cover": "assets/covers/siggraph26.jpg"
  }
 ];
