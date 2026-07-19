@@ -75,6 +75,22 @@ vlist.onclick=()=>{view='list';vlist.classList.add('on');vtl.classList.remove('o
 const bFavMode=document.getElementById('favmode'),bFavOnly=document.getElementById('favonly');
 bFavMode.onclick=()=>{favMode=!favMode;render();};
 bFavOnly.onclick=()=>{favOnly=!favOnly;render();};
+document.getElementById('favexp').onclick=()=>{
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify([...FAV],null,1)],{type:'application/json'}));
+  a.download='siggraph26_favorites.json';a.click();URL.revokeObjectURL(a.href);
+};
+const favFile=document.getElementById('favfile');
+document.getElementById('favimp').onclick=()=>favFile.click();
+favFile.onchange=()=>{
+  const f=favFile.files[0];favFile.value='';if(!f)return;
+  f.text().then(txt=>{
+    const arr=JSON.parse(txt);
+    if(!Array.isArray(arr)||!arr.every(k=>typeof k==='string'))throw 0;
+    const before=FAV.size;arr.forEach(k=>FAV.add(k));saveFav();render();
+    alert('Imported '+(FAV.size-before)+' new favorite(s) — '+FAV.size+' total.');
+  }).catch(()=>alert('Could not import: not a favorites JSON file (expected an array of strings).'));
+};
 function updateFavUI(){
   bFavMode.classList.toggle('on',favMode);
   bFavMode.textContent=favMode?'✓ Done editing':'✎ Edit favorites';

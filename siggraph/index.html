@@ -16,7 +16,10 @@
     <div class="sep"></div>
     <div class="grp"><span class="lbl">Favorites</span>
       <button id="favmode" class="fav">✎ Edit favorites</button>
-      <button id="favonly" class="fav">★ Favorites (0)</button></div>
+      <button id="favonly" class="fav">★ Favorites (0)</button>
+      <button id="favexp" class="fav" title="download favorites as a JSON file">⤓ Export</button>
+      <button id="favimp" class="fav" title="load favorites from an exported JSON file (merges with current)">⤒ Import</button>
+      <input id="favfile" type="file" accept=".json,application/json" hidden></div>
     <div class="sep"></div>
     <div class="grp"><span class="lbl">Program</span>
       <button id="clearty" class="on">All programs</button><span class="sub" id="tysel"></span></div>

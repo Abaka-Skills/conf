@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conference Planners</title>
+<style>
+:root{--bg:#0f1220;--panel:#171a2b;--ink:#e9ecf5;--muted:#9aa3c0;--line:#262a40;--hi:#3d7eff;--now:#2a9d8f}
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;display:flex;flex-direction:column}
+header{padding:34px 24px 6px;max-width:1200px;margin:0 auto;width:100%}
+h1{margin:0;font-size:24px;letter-spacing:.2px}
+h1 .sub{display:block;margin-top:4px;color:var(--muted);font-size:13px;font-weight:400}
+.wrap{max-width:1200px;margin:0 auto;padding:18px 24px 60px;width:100%;flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s,box-shadow .15s}
+.card:hover,.card:focus-visible{border-color:var(--hi);transform:translateY(-2px);box-shadow:0 8px 24px #0008}
+.card:focus-visible{outline:2px solid var(--hi);outline-offset:2px}
+.cover{aspect-ratio:16/9;background:#0b0d18;position:relative}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.chip{position:absolute;top:10px;left:10px;font-size:11px;font-weight:650;padding:3px 9px;border-radius:999px;color:#fff;background:#333a}
+.chip.now{background:var(--now)}.chip.soon{background:var(--hi)}.chip.past{background:#555c}
+.body{padding:14px 16px 15px;display:flex;flex-direction:column;gap:6px;flex:1}
+.body h2{margin:0;font-size:17px}
+.tagline{color:var(--muted);font-size:12px;margin:0}
+.meta{margin-top:auto;padding-top:10px;font-size:12.5px;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.meta b{color:var(--ink);font-weight:600}
+.foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding:9px 16px;font-size:12.5px}
+.foot .go{color:var(--hi);font-weight:650}
+.foot .off{color:var(--muted)}
+.foot .off:hover{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+footer{padding:14px 24px 22px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;text-align:center}
+footer a{color:var(--muted)}footer a:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+<header><h1>Conference Planners <span class="sub">Schedule visualizations for each conference — pick one to open its planner.</span></h1></header>
+<div class="wrap"><div class="grid" id="grid"></div></div>
+<footer><a href="https://abaka.ai" target="_blank" rel="noopener">abaka.ai</a> · <a href="https://2077ai.com" target="_blank" rel="noopener">2077ai.com</a></footer>
+<script src="meta.js"></script>
+<script>
+const fmt = iso => new Date(iso + "T00:00:00").toLocaleDateString("en-US", {month:"short", day:"numeric"});
+const year = iso => iso.slice(0, 4);
+function status(c){
+  const today = new Date().toISOString().slice(0, 10);
+  if (today > c.end) return {cls:"past", txt:"Past"};
+  if (today >= c.start) return {cls:"now", txt:"Happening now"};
+  const days = Math.round((new Date(c.start) - new Date(today)) / 864e5);
+  return days <= 60 ? {cls:"soon", txt:`In ${days} days`} : {cls:"", txt:"Upcoming"};
+}
+document.getElementById("grid").innerHTML = CONFERENCES.map(c => {
+  const s = status(c);
+  const dates = `${fmt(c.start)}–${fmt(c.end)}, ${year(c.end)}`;
+  return `<a class="card" href="${c.schedule}">
+    <div class="cover"><img src="${c.cover}" alt="${c.title}" loading="lazy"><span class="chip ${s.cls}">${s.txt}</span></div>
+    <div class="body">
+      <h2>${c.title}</h2>
+      ${c.subtitle ? `<p class="tagline">${c.subtitle}</p>` : ""}
+      <div class="meta"><span>📅 <b>${dates}</b></span><span>📍 ${c.location}</span></div>
+    </div>
+    <div class="foot"><span class="go">Open schedule →</span>
+      <span class="off" onclick="event.preventDefault();event.stopPropagation();window.open('${c.official}','_blank')">↗ official site</span></div>
+  </a>`;
+}).join("");
+</script>
+</body></html>
