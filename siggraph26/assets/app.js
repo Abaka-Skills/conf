@@ -11,6 +11,36 @@ const TYCOLOR = {
  "Educator's Forum":'#6b8f3f',"Educator's Day Sessions":'#6b8f3f','ACM SIGGRAPH 365':'#606c8c',
  'Exhibition':'#8a7350','Appy Hour':'#3f7368','Pathfinders':'#8a7350','Other':'#444a60'};
 const clr = t => TYCOLOR[t] || '#444a60';
+const TYDESC = {
+ 'Technical Papers':'Peer-reviewed research presentations — the core scientific program.',
+ 'Courses':'In-depth tutorials taught by experts, from introductory to advanced.',
+ 'Talks':'Short presentations of techniques, tools, and work in progress from research and production.',
+ 'Panels':'Moderated discussions where experts debate current topics.',
+ 'Birds of a Feather':'Informal community meetups around a shared interest.',
+ 'Industry Sessions':'Company-hosted presentations of tools, pipelines, and tech.',
+ 'Production Sessions':'Behind-the-scenes breakdowns of films, games, and VFX by the teams who made them.',
+ 'Keynote Speakers':'Headline addresses from leaders in graphics and interactive techniques.',
+ 'ACM SIGGRAPH Award Talks':"Talks by this year's ACM SIGGRAPH award recipients.",
+ 'Real-Time Live!':'Live on-stage demos of cutting-edge real-time graphics — rendered live, no cheating.',
+ 'Computer Animation Festival':"Juried festival showcasing the year's best animated shorts and VFX.",
+ 'Electronic Theater':"The Computer Animation Festival's flagship curated screening.",
+ 'Art Gallery':'Curated exhibition of digital, interactive, and media artworks.',
+ 'Art Papers':'Peer-reviewed papers at the intersection of art, science, and technology.',
+ 'Emerging Technologies':'Hands-on demos of novel displays, haptics, robotics, and interfaces.',
+ 'Immersive Pavilion':'VR, AR, and mixed-reality experiences you can try on the floor.',
+ 'Spatial Storytelling':'Immersive and location-based narrative works.',
+ 'Frontiers':'Talks and workshops connecting graphics with frontier fields like AI, medicine, and space.',
+ 'Games Summit':'Sessions dedicated to game development and interactive entertainment.',
+ 'Posters':'Research posters on display all week — meet the authors at scheduled sessions.',
+ 'Technical Workshops':'Interactive workshops digging into emerging research areas.',
+ "Educator's Forum":'Sessions for teachers of graphics and interactive media.',
+ "Educator's Day Sessions":'A focused day of programming for educators.',
+ 'ACM SIGGRAPH 365':'Community, committee, and networking events run by ACM SIGGRAPH.',
+ 'Exhibition':'The trade-show floor: vendors, studios, and hardware.',
+ 'Appy Hour':'Social hour where indie developers demo mobile and casual apps.',
+ 'Pathfinders':'Mentoring and guided experiences for students and newcomers.',
+ 'Stage Sessions':'Exhibitor talks on the Exhibition stage.',
+ 'Other':"Events that don't fit another program."};
 function fmt(m){m=((m%1440)+1440)%1440;let h=Math.floor(m/60),mm=m%60,ap=h<12?'am':'pm';h=(h%12)||12;return h+(mm?':'+String(mm).padStart(2,'0'):'')+ap;}
 function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
 
@@ -141,10 +171,20 @@ function buildMatrix(){
   });
   html+='</tbody><tfoot><tr><td class="showbox-td"></td><td>All programs</td>'+DAYS.map(d=>'<td>'+(dtot[d]||0)+'</td>').join('')+'<td>'+EV.length+'</td></tr></tfoot>';
   mx.innerHTML=html;
-  mx.querySelectorAll('tbody tr').forEach(r=>r.onclick=()=>{
-    const t=r.dataset.ty;
-    disabledTy.has(t)?disabledTy.delete(t):disabledTy.add(t);
-    saveDisabled();render();
+  mx.querySelectorAll('tbody tr').forEach(r=>{
+    r.onclick=()=>{
+      const t=r.dataset.ty;
+      disabledTy.has(t)?disabledTy.delete(t):disabledTy.add(t);
+      saveDisabled();render();
+    };
+    const td=r.children[1], t=r.dataset.ty;
+    if(TYDESC[t]){
+      td.onmouseenter=ev=>{tipK=null;
+        tip.innerHTML='<div class="tt"><span class="sw" style="background:'+clr(t)+'"></span>'+esc(t)+'</div><div class="desc">'+esc(TYDESC[t])+'</div>';
+        tip.classList.add('show');moveTip(ev);};
+      td.onmousemove=moveTip;
+      td.onmouseleave=()=>tip.classList.remove('show');
+    }
   });
   const sa=document.getElementById('showall');
   sa.checked=disabledTy.size===0;
