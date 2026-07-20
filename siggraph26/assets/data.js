@@ -7535,7 +7535,6 @@ const EVENTS = [
    "Todd Jansen",
    "Adam Holmes",
    "Karl Herbst",
-   "Jon Teer",
    "Dave Clayton",
    "Kyle Winkelman"
   ],
@@ -8776,7 +8775,7 @@ const EVENTS = [
   "type": "Stage Sessions",
   "psid": "sess594",
   "ssid": "none",
-  "title": "Prana Labs | Seeing is Believing, Grasping is Physics: Generative Environments with Physically-Grounded Robot Manipulation",
+  "title": "Prana Labs | Tripo AI x Prana Labs",
   "url": "https://s2026.conference-schedule.org/?post_type=page&p=15&id=stage_106&sess=sess594",
   "room": "West Hall A",
   "speakers": [],
@@ -10085,9 +10084,10 @@ const EVENTS = [
   "room": "Room 404 AB",
   "speakers": [
    "AJ Christensen",
+   "Daniel Pillis",
    "Jeffrey D. Weekley",
-   "Victor Zordan",
-   "AJ Christensen"
+   "Kevin McKeon",
+   "Daniel Pillis"
   ],
   "tags": [
    "Research & Education",
