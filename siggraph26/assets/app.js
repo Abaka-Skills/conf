@@ -63,6 +63,9 @@ function saveDisabled(){localStorage.setItem('sig26hidety', JSON.stringify([...d
 // ---- favorites
 let favMode=false, favOnly=false;
 const FAV = new Set(JSON.parse(localStorage.getItem('sig26fav')||'[]'));
+// favorites stay visible even when their program is hidden (matrix fav row)
+let favAlways=localStorage.getItem('sig26favalways')!=='0';
+function saveFavAlways(){localStorage.setItem('sig26favalways',favAlways?'1':'0');}
 const fkey = e => e.d+'|'+e.sm+'|'+e.t;
 function saveFav(){localStorage.setItem('sig26fav', JSON.stringify([...FAV]));}
 function toggleFav(e){const k=fkey(e);FAV.has(k)?FAV.delete(k):FAV.add(k);saveFav();render();}
@@ -81,7 +84,8 @@ function matches(e){
 }
 function markHit(el,e){ if(q) el.classList.add(matches(e)?'hit':'miss'); }
 function visible(e){
-  return (day==='all'||e.d===day) && !disabledTy.has(e.ty) && (!favOnly||FAV.has(fkey(e)));
+  const fav=FAV.has(fkey(e));
+  return (day==='all'||e.d===day) && (!disabledTy.has(e.ty)||(favAlways&&fav)) && (!favOnly||fav);
 }
 
 // ---- header stats & controls
@@ -159,12 +163,19 @@ function buildMatrix(){
   types.forEach(t=>{cnt[t]={};DAYS.forEach(d=>cnt[t][d]=0);});
   EV.forEach(e=>{cnt[e.ty][e.d]++;dtot[e.d]=(dtot[e.d]||0)+1;});
   let html='<thead><tr><th class="showbox-th"><input type="checkbox" class="showbox" id="showall" title="show/hide all programs"></th><th>Program</th>'+DAYS.map(d=>'<th>'+DAYNAME[d]+'</th>').join('')+'<th>Total</th></tr></thead><tbody>';
+  const favCnt={};let favTot=0;
+  EV.forEach(e=>{if(FAV.has(fkey(e))){favCnt[e.d]=(favCnt[e.d]||0)+1;favTot++;}});
+  html+='<tr class="favrow">'+
+    '<td class="showbox-td"><input type="checkbox" class="showbox" title="keep favorites visible even when their program is hidden"'+(favAlways?' checked':'')+'></td>'+
+    '<td><span class="sw" style="background:#ffd54a"></span>★ My favorites<div class="tydesc">Events you starred. When ticked they stay on the calendar even if their program is hidden.</div></td>'+
+    DAYS.map(d=>'<td><span class="cell" style="background:'+(favCnt[d]?'rgba(255,213,74,.22)':'transparent')+'">'+(favCnt[d]||'·')+'</span></td>').join('')+
+    '<td class="tot">'+favTot+'</td></tr>';
   types.forEach(t=>{
     const tot=DAYS.reduce((a,d)=>a+cnt[t][d],0);
     const off=disabledTy.has(t);
     html+='<tr data-ty="'+esc(t)+'"'+(off?' class="off"':'')+'>'+
       '<td class="showbox-td"><input type="checkbox" class="showbox" title="show/hide these events"'+(off?'':' checked')+'></td>'+
-      '<td><span class="sw" style="background:'+clr(t)+'"></span>'+esc(t)+'</td>';
+      '<td><span class="sw" style="background:'+clr(t)+'"></span>'+esc(t)+(TYDESC[t]?'<div class="tydesc">'+esc(TYDESC[t])+'</div>':'')+'</td>';
     DAYS.forEach(d=>{const n=cnt[t][d];const a=n?Math.min(.85,.13+n/26):0;
       html+='<td><span class="cell" style="background:'+(n?'rgba(61,126,255,'+a.toFixed(2)+')':'transparent')+'">'+(n||'·')+'</span></td>';});
     html+='<td class="tot">'+tot+'</td></tr>';
@@ -174,17 +185,10 @@ function buildMatrix(){
   mx.querySelectorAll('tbody tr').forEach(r=>{
     r.onclick=()=>{
       const t=r.dataset.ty;
+      if(!t){favAlways=!favAlways;saveFavAlways();render();return;}   // favorites row
       disabledTy.has(t)?disabledTy.delete(t):disabledTy.add(t);
       saveDisabled();render();
     };
-    const td=r.children[1], t=r.dataset.ty;
-    if(TYDESC[t]){
-      td.onmouseenter=ev=>{tipK=null;
-        tip.innerHTML='<div class="tt"><span class="sw" style="background:'+clr(t)+'"></span>'+esc(t)+'</div><div class="desc">'+esc(TYDESC[t])+'</div>';
-        tip.classList.add('show');moveTip(ev);};
-      td.onmousemove=moveTip;
-      td.onmouseleave=()=>tip.classList.remove('show');
-    }
   });
   const sa=document.getElementById('showall');
   sa.checked=disabledTy.size===0;
