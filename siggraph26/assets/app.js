@@ -201,6 +201,11 @@ function buildMatrix(){
   };
 }
 
+// current wall-clock in conference time (PDT), same convention as EV times
+function nowPDT(){const n=new Date(Date.now()-7*3600e3);
+  return {d:n.toISOString().slice(0,10), m:n.getUTCHours()*60+n.getUTCMinutes()};}
+setInterval(()=>{if(view==='tl')render();},60000);   // keep the now-line moving
+
 // ---- tooltip
 const tip=document.getElementById('tip');
 // Description is fetched live from the official site's REST API on first hover
@@ -329,6 +334,12 @@ function buildTimeline(){
         const y=(m-start)*PXMIN;
         const ln=document.createElement('div');ln.className='hourline';ln.style.top=y+'px';grid.appendChild(ln);
         const lb=document.createElement('div');lb.className='hourlbl';lb.style.top=y+'px';lb.textContent=fmt(m);grid.appendChild(lb);
+      }
+      const now=nowPDT();
+      if(d===now.d&&now.m>=start&&now.m<=end){
+        const nl=document.createElement('div');nl.className='nowline';nl.style.top=((now.m-start)*PXMIN)+'px';
+        nl.innerHTML='<span class="nowlbl">'+fmt(now.m)+'</span>';
+        grid.appendChild(nl);
       }
       packColumns(timed).forEach(e=>{
         const a=document.createElement('a');a.className='tlev';a.style.background=clr(e.ty);

@@ -28,6 +28,8 @@ table.mx{border-collapse:collapse;width:100%;font-size:12.5px}
 .mx tbody tr.on{background:#232a4a}
 .mx .sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:7px;vertical-align:-1px}
 .mx .tydesc{font-size:11px;color:var(--muted);font-weight:400;margin:2px 0 0 17px;white-space:normal;max-width:380px;line-height:1.35}
+.nowline{position:absolute;left:0;right:0;border-top:2px solid #ff5252;z-index:6;pointer-events:none}
+.nowline .nowlbl{position:absolute;left:2px;top:-8px;font-size:10px;font-weight:700;color:#fff;background:#ff5252;padding:0 4px;border-radius:3px}
 .mx tr.favrow td{border-bottom:1px solid #3a4063}
 .mx .cell{display:inline-block;min-width:26px;padding:1px 6px;border-radius:5px}
 .mx td.tot{font-weight:700}
