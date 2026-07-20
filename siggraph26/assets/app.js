@@ -159,18 +159,43 @@ function buildMatrix(){
 
 // ---- tooltip
 const tip=document.getElementById('tip');
+// Description is fetched live from the official site's REST API on first hover
+// (the only CORS-open route there; the plain session pages are not fetchable).
+const DESC=new Map();   // fkey -> text ('' = fetched, none found; undefined = not yet)
+let tipK=null, tipE=null, tipXY=null;
+function descUrl(e){
+  const q=new URLSearchParams((e.orig.url.split('?')[1]||''));
+  if(!q.get('p'))return null;
+  return 'https://s2026.conference-schedule.org/wp-json/wp/v2/pages?_fields=content'+
+    '&include='+q.get('p')+'&sess='+(q.get('sess')||'')+(q.get('id')?'&id='+q.get('id'):'');
+}
+function loadDesc(e){
+  const k=fkey(e), u=descUrl(e);
+  if(DESC.has(k)||!u)return;
+  DESC.set(k,undefined);  // in-flight
+  fetch(u).then(r=>r.json()).then(d=>{
+    const html=(d[0]&&d[0].content&&d[0].content.rendered)||'';
+    const a=new DOMParser().parseFromString(html,'text/html').querySelector('.abstract');
+    DESC.set(k,a?a.textContent.trim():'');
+    if(tipK===k)showTip(tipE,tipXY);          // update the open tooltip in place
+  }).catch(()=>DESC.delete(k));               // network error: retry on next hover
+}
 function showTip(e,ev){
+  tipK=fkey(e);tipE=e;tipXY={clientX:ev.clientX,clientY:ev.clientY};
+  const dsc=DESC.get(tipK);
+  if(dsc===undefined)loadDesc(e);
   tip.innerHTML='<div class="tt">'+(FAV.has(fkey(e))?'★ ':'')+esc(e.t)+'</div>'+
     '<div class="row"><span class="k">When</span><b>'+DAYFULL[e.d]+' · '+fmt(e.sm)+'–'+fmt(e.em)+' PDT</b></div>'+
     '<div class="row"><span class="k">Where</span><b>'+esc(e.r)+'</b></div>'+
     '<div class="row"><span class="k">Program</span><b>'+esc(e.ty)+'</b></div>'+
     (e.sp&&e.sp.length?'<div class="row"><span class="k">People</span><b>'+esc(e.sp.join(', '))+'</b></div>':'')+
+    (dsc?'<div class="desc">'+esc(dsc)+'</div>':dsc===undefined&&descUrl(e)?'<div class="desc loading">loading description…</div>':'')+
     (e.tg&&e.tg.length?'<div class="chips">'+e.tg.slice(0,8).map(t=>'<span class="chip">'+esc(t)+'</span>').join('')+'</div>':'');
   tip.classList.add('show');moveTip(ev);
 }
 function moveTip(ev){const p=14,w=tip.offsetWidth,h=tip.offsetHeight;let x=ev.clientX+p,y=ev.clientY+p;
   if(x+w>innerWidth-8)x=ev.clientX-w-p;if(y+h>innerHeight-8)y=innerHeight-h-8;tip.style.left=x+'px';tip.style.top=y+'px';}
-function hookTip(el,e){el.onmouseenter=ev=>showTip(e,ev);el.onmousemove=moveTip;el.onmouseleave=()=>tip.classList.remove('show');}
+function hookTip(el,e){el.onmouseenter=ev=>showTip(e,ev);el.onmousemove=ev=>{tipXY={clientX:ev.clientX,clientY:ev.clientY};moveTip(ev);};el.onmouseleave=()=>{tipK=null;tip.classList.remove('show');};}
 
 function filterInfo(){
   const shown=EV.filter(visible);

@@ -106,6 +106,8 @@ footer{color:var(--muted);font-size:12px;padding:20px 24px 30px}footer a{color:v
 #tip .tt{font-size:13.5px;font-weight:650;margin-bottom:5px}
 #tip .row{display:flex;gap:7px;font-size:12px;color:var(--muted);margin:2px 0}.k{color:var(--muted);min-width:54px;flex:0 0 54px}
 #tip .row b{color:var(--ink);font-weight:600}
+#tip .desc{margin-top:7px;font-size:12px;color:var(--muted);line-height:1.45;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}
+#tip .desc.loading{font-style:italic;opacity:.6}
 #tip .chips{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
 #tip .chip{font-size:11px;padding:2px 8px;border-radius:999px;background:#2a3052;color:#cdd5f5}
 @media (max-width:760px){.evrow .badge{flex-basis:100px}.evrow .tm{flex-basis:86px}}
