@@ -5,7 +5,7 @@ function orgOf(name) {
   return XB.find(x => x.aka.test(name)) || OTHER_ORGS.find(o => o.aka.test(name)) || null;
 }
 function gotoBooth(b) {
-  tab = 'expo'; lsSet('corl26tab', tab); render();
+  tab = 'expo'; hall = hallOf(b); lsSet('corl26tab', tab); render();
   const el = document.querySelector('#expo .booth[data-b="' + b + '"]');
   if (el) { el.scrollIntoView({block: 'center'}); el.classList.add('hl'); setTimeout(() => el.classList.remove('hl'), 2500); }
 }

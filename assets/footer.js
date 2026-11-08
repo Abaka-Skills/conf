@@ -9,7 +9,6 @@
   if (!f) return;
   const LINKS = [
     ['abaka.ai', 'https://abaka.ai'],
-    ['2077ai.com', 'https://2077ai.com'],
     ['GitHub', 'https://github.com/Abaka-Skills/conf'],
     ['about me', 'https://neutrinoliu.github.io'],
   ];

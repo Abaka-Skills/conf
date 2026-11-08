@@ -236,3 +236,4 @@ button.pick{border-radius:7px}
 .rcard .star{position:absolute;top:3px;right:3px;border:none;background:none;padding:0 4px;color:#5c6584;font-size:15px}
 .rcard .star.on{color:#ffd54a}
 body[data-tab=rec] .picksrow{display:none}
+.expohdr .seg{margin:4px 0 6px}.expohdr .seg button{padding:6px 14px;font-weight:650}

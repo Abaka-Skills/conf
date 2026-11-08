@@ -48,4 +48,5 @@ const TOP_PICKS = [
 ];
 
 // Exhibitor picks: booth numbers (see exhibitors.js); others count as topic matches via their categories.
-const TOP_BOOTHS = [400, 504, 205, 410, 200, 100, 508, 204, 500, 104, 502, 103];
+const TOP_BOOTHS = [400, 504, 205, 410, 200, 100, 508, 204, 500, 104, 502, 103,
+  804, 604, 700, 1207, 1203, 1105, 1205, 701, 707, 1000];
