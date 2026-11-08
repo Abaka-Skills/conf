@@ -24,7 +24,8 @@ opening `index.html` straight from disk.
 |------|------------|
 | `index.html`, `meta.js` | The front page and the list of conferences it shows |
 | `siggraph26/` | The SIGGRAPH 2026 planner (one folder per conference) |
-| `siggraph26/tools/pull_official.mjs` | Script that fetches the latest schedule |
+| `corl26/` | The CoRL 2026 planner, plus an Exhibition tab with the booth map |
+| `*/tools/pull_official.mjs` | Script that fetches the latest schedule for that planner |
 | `.github/workflows/` | A "Pull from official" button in the Actions tab |
 
 ## Keeping the schedule up to date

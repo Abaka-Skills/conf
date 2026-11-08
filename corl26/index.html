@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CoRL 2026 — All Events Summary · Nov 9–12 · Austin</title>
+<link rel="stylesheet" href="assets/summary.css">
+</head>
+<body>
+<header><div class="hin">
+  <div class="htop">
+  <h1><a class="back" href="../index.html" title="back to all conference planners">‹ Conferences</a> CoRL 2026 · All Events <span class="sub">Austin · Nov 9–12, 2026 · Hilton (talks) + JW Marriott (posters, exhibits, workshops) · CST</span></h1>
+<div id="searchbox">
+  <input id="q" type="search" placeholder="search title, people, room, exhibitor…">
+  <span id="qcount"></span>
+  <button id="qprev" title="previous match (Shift+Enter)">‹</button>
+  <button id="qnext" title="next match (Enter)">›</button>
+</div>
+  <div class="stats" id="stats"></div>
+  <div class="favbar">
+    <button id="favmode" class="fbtn schedonly">✎ Edit</button><button id="favonly" class="fbtn schedonly">★ Favorites (0)</button><button id="favexp" class="fbtn" title="download favorites as a JSON file">⤓ Export</button><button id="favimp" class="fbtn" title="load favorites from an exported JSON file (merges with current)">⤒ Import</button><a class="fbtn pull" href="https://github.com/Abaka-Skills/conf/actions/workflows/pull-official-corl26.yml" target="_blank" rel="noopener" title="re-scrape the official site and update this page's data (runs a GitHub Action; the site can't be fetched from the browser directly)">⟳ Pull from official</a>
+    <input id="favfile" type="file" accept=".json,application/json" hidden></div>
+  </div>
+  <div class="controls">
+    <div class="seg tabs"><button id="tabsched" class="on">🗓 Schedule</button><button id="tabexpo">🗺 Exhibition</button><button id="tabrec">🤝 Recruiting</button></div>
+    <div class="seg schedonly"><button id="vtl" class="on">Timeline</button><button id="vlist">List</button></div>
+  </div>
+  <div class="controls schedonly">
+    <div class="grp"><span class="lbl">Day</span><span class="seg" id="daybtns"></span></div>
+    <div class="grp"><span class="lbl">Program</span><span class="seg"><button id="clearty" class="on">All programs</button></span><span class="sub" id="tysel"></span></div>
+    <div class="grp"><span class="lbl">Venue</span><span class="seg" id="venuebtns"></span></div>
+  </div>
+  <div class="controls picksrow">
+    <div class="grp"><span class="lbl">Picks</span><button id="pickmode" class="pick" title="show only the hand-picked top picks (combines with the selected topics)">✦ Top picks only</button>
+      <span class="topics" id="topicbtns"></span><button id="pickclear" class="topic" title="clear the picks filter">✕ clear</button></div>
+  </div>
+</div></header>
+<div class="wrap" id="sched">
+  <h2 id="mxhdr" class="fold"><span class="caret">▾</span> Program × Day overview <span class="sub">(checkbox shows/hides that program's events · click title to fold)</span></h2>
+  <div class="matrix" id="mxbox"><table class="mx" id="mx"></table></div>
+  <h2 id="agendahdr">Agenda</h2>
+  <div id="agenda"></div>
+</div>
+<div class="wrap" id="expo"></div>
+<div class="wrap" id="rec"></div>
+<div id="tip"></div>
+<footer>Scraped from the official program at <a href="https://www.corl.org/program" target="_blank" rel="noopener">↗ corl.org/program</a> (papers, posters, demos, late-breaking results, workshops, sponsor talks, recruiting, socials) · papers link to OpenReview, workshops to their own sites.
+Booth map transcribed from the exhibit floor plan (rev. 10/22/2026). ✦ Picks are a curated topic layer (dexterous hands, data flywheel, Sys1/Sys2, RL, compliance, humanoids).
+Favorites are saved in your browser (localStorage) — per browser and per site.
+<div class="foot2"><a href="https://abaka.ai" target="_blank" rel="noopener">abaka.ai</a> · <a href="https://2077ai.com" target="_blank" rel="noopener">2077ai.com</a> · <a href="https://github.com/Abaka-Skills/conf" target="_blank" rel="noopener">↗ GitHub</a></div></footer>
+<script src="assets/data.js"></script>
+<script src="assets/picks.js"></script>
+<script src="assets/exhibitors.js"></script>
+<script src="assets/exhibit.js"></script>
+<script src="assets/recruiting.js"></script>
+<script src="assets/app.js"></script>
+</body></html>

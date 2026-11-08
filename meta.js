@@ -12,5 +12,16 @@ window.CONFERENCES = [
   "official": "https://s2026.siggraph.org/",
   "schedule": "siggraph26/",
   "cover": "assets/covers/siggraph26.jpg"
+ },
+ {
+  "id": "corl26",
+  "title": "CoRL 2026",
+  "subtitle": "Conference on Robot Learning — talks, papers, posters, demos, workshops and an exhibition booth map",
+  "start": "2026-11-09",
+  "end": "2026-11-12",
+  "location": "Hilton Austin + JW Marriott Austin · Austin, TX, USA",
+  "official": "https://www.corl.org/",
+  "schedule": "corl26/",
+  "cover": "assets/covers/corl26.jpg"
  }
 ];
