@@ -237,3 +237,32 @@ button.pick{border-radius:7px}
 .rcard .star.on{color:#ffd54a}
 body[data-tab=rec] .picksrow{display:none}
 .expohdr .seg{margin:4px 0 6px}.expohdr .seg button{padding:6px 14px;font-weight:650}
+/* ---- phones: header scrolls away and stays compact; wide rows swipe sideways */
+@media (max-width:760px){
+  header{padding:10px 14px 8px}
+  body.menufold h1 .sub{display:none}
+  .wrap{padding:12px 14px 40px}
+  h1{font-size:16px}h1 .sub{display:block;font-size:12px;margin-top:4px}
+  .stats{gap:10px;font-size:11.5px}.stats b{font-size:13px}
+  .stats span:nth-child(3),.stats span:nth-child(4){display:none}
+  .fbtn.pull{display:none}
+  .hin #searchbox{width:100%}.hin #searchbox input{flex:1;width:auto;min-width:0}
+  header .controls{gap:10px;margin-top:8px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  header .controls::-webkit-scrollbar{display:none}
+  header .controls .grp,.seg,.topics{flex-wrap:nowrap;flex-shrink:0}
+  .seg button,.topics button,.fbtn{white-space:nowrap}
+  header .controls.schedonly{flex-direction:column;align-items:flex-start;overflow:visible}
+  header .controls.schedonly .grp{max-width:100%;overflow-x:auto;scrollbar-width:none}
+  .daycols{overflow-x:auto;-webkit-overflow-scrolling:touch;grid-template-columns:repeat(5,minmax(230px,1fr))!important}
+  .daycols .tlgrid.first{margin-left:40px}
+  .evrow{flex-wrap:wrap;gap:4px 10px}
+  .evrow .tm{flex:0 0 auto}.evrow .badge{flex:0 0 auto;max-width:60%}
+  .evrow .body{flex:1 0 100%}
+  .evrow.ingrp{margin-left:6px}
+  .walk{margin-left:0}
+  .planbox{position:static}
+  #tip{max-width:calc(100vw - 16px)}
+}
+/* foldable menu (☰ in the search box) */
+body.menufold header .stats,body.menufold .favbar,body.menufold header .controls{display:none!important}
+#menutog.on{background:var(--hi);border-color:var(--hi);color:#fff}

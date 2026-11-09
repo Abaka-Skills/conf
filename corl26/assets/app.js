@@ -109,8 +109,10 @@ document.getElementById('stats').innerHTML =
   '<span><b>'+EV.length+'</b>events</span><span><b>'+DAYS.length+'</b>days</span><span><b>'+types.length+'</b>program types</span>'+
   '<span><b>2</b>main venues + Bass Hall</span><span><b>'+EV.filter(e=>e.top).length+'</b>✦ top picks</span>'+
   '<span><b>'+EXHIBITORS.length+'</b>booths</span><span><b>'+EV.filter(e=>e.ty===REC).length+'</b>recruiting sessions</span>';
+// phones open on today's day while the conference is on (five day columns are too wide for a phone)
+if(matchMedia('(max-width:760px)').matches&&DAYS.includes(nowLocal().d))day=nowLocal().d;
 const db=document.getElementById('daybtns');
-['all',...DAYS].forEach(d=>{const b=document.createElement('button');b.className='day'+(d==='all'?' on':'');
+['all',...DAYS].forEach(d=>{const b=document.createElement('button');b.className='day'+(d===day?' on':'');
   b.textContent=d==='all'?'All days':DAYNAME[d];b.onclick=()=>{day=d;[...db.children].forEach(x=>x.classList.toggle('on',x===b));render();};db.appendChild(b);});
 const vb=document.getElementById('venuebtns');
 [['all','All venues'],...VENUES].forEach(([k,l])=>{const b=document.createElement('button');b.className='venue'+(k==='all'?' on':'');
@@ -483,7 +485,12 @@ function render(){
   if(tab==='rec'){buildRec();updateSearchNav();return;}
   updateProgUI();buildMatrix();(view==='tl'?buildTimeline:buildAgenda)();updateSearchNav();
 }
+// foldable menu: everything under the title except search; folded by default on phones
+const bMenu=document.getElementById('menutog');
+function setMenu(fold){document.body.classList.toggle('menufold',fold);bMenu.classList.toggle('on',!fold);setHdr();}
+bMenu.onclick=()=>setMenu(!document.body.classList.contains('menufold'));
 // sticky offsets follow the (wrapping) header height
-function setHdr(){document.documentElement.style.setProperty('--hdr',document.querySelector('header').offsetHeight+'px');}
+function setHdr(){const h=document.querySelector('header');   // 0 when the header isn't sticky (phones)
+  document.documentElement.style.setProperty('--hdr',(getComputedStyle(h).position==='sticky'?h.offsetHeight:0)+'px');}
 addEventListener('resize',setHdr);
-render();setHdr();
+render();setMenu(matchMedia('(max-width:760px)').matches);
